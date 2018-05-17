@@ -2,5 +2,5 @@
 
 * Lazysodium documentation
 * [Usage](usage.md)
-* Compiling Libsodium
+* [Compiling Libsodium](compiling-libsodium.md)
 
