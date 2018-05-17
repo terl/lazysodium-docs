@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* Lazysodium documentation
+* Home
 * [Usage](usage.md)
 * [Compiling Libsodium](compiling-libsodium.md)
 
