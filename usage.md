@@ -1,8 +1,7 @@
 ---
 description: >-
-  Before we begin, please ensure you have added Lazysodium as a dependency in
-  your project. This is outlined in the
-  [readme](https://github.com/terl/lazysodium-java#get-started).
+  This page allows you to get the hand of Lazysodium and its relationship with
+  Libsodium.
 ---
 
 # Usage
@@ -10,10 +9,11 @@ description: >-
 Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in the [readme](https://github.com/terl/lazysodium-java#get-started).
 
 ### Read the docs
-**Remember, read the [Libsodium documentation](https://download.libsodium.org/doc/) to find out what each function outlined below does!**
 
+**Remember, read the** [**Libsodium documentation**](https://download.libsodium.org/doc/) **to find out what each function outlined below does!**
 
 ### How Lazysodium names its functions
+
 To understand how Lazysodium's naming works, here's a piece of code. Don't worry if you don't understand it, in the next section, we will break down each step, piece by piece.
 
 ```java
@@ -43,10 +43,10 @@ String key = secretBoxLazy.cryptoSecretBoxKeygen();
 
 As you can see, the C code has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`.
 
-
 ### Initialising
 
 #### 1. Initialise Sodium
+
 The first step is to create a `sodium` object. The `sodium` object should only be initialised once as it loads the native Libsodium library.
 
 ```java
@@ -63,14 +63,14 @@ Sodium sodium = new SodiumJava("/absolute/path/to/libsodium");
 Sodium sodium = new SodiumAndroid("/absolute/path/to/directory/of/android/ABIS");
 ```
 
-The above code loads the *native* C Libsodium library from Lazysodium's `resources` folder. The above code also demonstrates that you can also provide a path to your own Libsodium file. This can be more preferable if you are running on a operating system or platform which may not be mainstream and so have compiled Libsodium yourself. If you need some hints on how to compile please see the [[building and compiling|Building-and-compiling]] section.
+The above code loads the _native_ C Libsodium library from Lazysodium's `resources` folder. The above code also demonstrates that you can also provide a path to your own Libsodium file. This can be more preferable if you are running on a operating system or platform which may not be mainstream and so have compiled Libsodium yourself. If you need some hints on how to compile please see the \[\[building and compiling\|Building-and-compiling\]\] section.
 
 For Linux, the native Libsodium library will be contained in a `libsodium.so` file. For Mac, it's called `libsodium.dylib`. For Windows, it's called `libsodium.dll`. For Android, it's `libsodium.so`, but it's NOT the same as the Linux `libsodium.so`, it's compiled differently.
 
 We shall leave you to find out how best to detect your platform as it may vary depending on your use case.
 
-
 #### 2. Initialise Lazysodium
+
 After initialising a `sodium` object you should now pass that `sodium` object to a `LazySodium` instance.
 
 ```java
@@ -79,6 +79,7 @@ LazySodium lazySodium = new LazySodium(sodium, StandardCharsets.UTF_8);
 ```
 
 #### 3. Native or Lazy
+
 Now that you have a `lazySodium` object, you can start using Libsodium lazily or natively. The way we've developed Lazysodium is that you can cast the `lazySodium` object to the interfaces that you need at that time. It makes it much easier for you to code. Modern text editors and IDEs can auto-suggest the code that you are interested in. Here's an example of said casting to accomplish password hashing.
 
 ```java
@@ -107,8 +108,8 @@ String hash = pwHashLazy.cryptoPwHashStr(
 );
 ```
 
+#### Step 4: Raw functions \(Optional\)
 
-#### Step 4: Raw functions (Optional)
 In one of the first steps above, you created a `sodium` object. You can actually use that object to call raw native C Libsodium functions.
 
 ```java
@@ -130,15 +131,15 @@ int res = sodium.crypto_pwhash(outputHash,
 if (res == 0) { 
     // Successfully hashed a password!
 }
-
 ```
 
-It's just another way Lazysodium provides you to do different things with potentially the same outcomes 😄 
+It's just another way Lazysodium provides you to do different things with potentially the same outcomes 😄
 
 To view all the functions, please view the [`Sodium`](https://github.com/terl/lazysodium-java/blob/master/src/main/java/com/goterl/lazycode/lazysodium/Sodium.java) class.
 
 #### 5. Constants
-All constants are also located in their relevant operational interfaces. 
+
+All constants are also located in their relevant operational interfaces.
 
 Let's say for example you were performing a key exchange. The first thing you do is generate a key. You opted to use this method `KeyExchange.cryptoBoxKeypair(byte[] publicKey, byte[] secretKey)`. But that leaves you wondering how many bytes to use for `publicKey` and `secretKey`. The `KeyExchange` interface has these byte sizes available for you:
 
@@ -157,9 +158,9 @@ public interface KeyExchange {
 
 All constants kind of mirror Libsodium's constants. For example, `crypto_kx_PUBLICKEYBYTES` is available as `KeyExchange.PUBLICKEYBYTES`, or `crypto_shorthash_KEYBYTES` is available as `ShortHash.KEYBYTES`.
 
-
 ## Extra code samples
+
 Please review the [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples. They are pretty easy to follow.
 
-If you would like to contribute some code but you're not sure how, please view the [[contributor's guide|Contributor's-guide]].
+If you would like to contribute some code but you're not sure how, please view the \[\[contributor's guide\|Contributor's-guide\]\].
 

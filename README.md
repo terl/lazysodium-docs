@@ -1,2 +1,4 @@
-# lazysodium-docs
+# Introduction
+
 The documentation for Lazysodium.
+
