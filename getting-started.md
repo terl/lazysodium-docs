@@ -162,5 +162,3 @@ All constants kind of mirror Libsodium's constants. For example, `crypto_kx_PUBL
 
 Please review the [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples. They are pretty easy to follow.
 
-If you would like to contribute some code but you're not sure how, please view the \[\[contributor's guide\|Contributor's-guide\]\].
-
