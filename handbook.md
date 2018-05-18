@@ -65,7 +65,40 @@ Therefore, if you want to convert a `byte[]` array to a `String`, then it's best
 2. Lazy functions, **in most cases**, take and return hexadecimal strings - be careful and read the code's documentation to be sure.
 3. **Always** convert your Lazy function byte arrays to strings using the `lazySodium.sodiumBinToHex(byte[])` method or the `LazySodium.toHex(byte[])` static method, otherwise you'd suffer painful consequences in the form of null bytes.
 
+### Checker
 
+In some interfaces, you have static checkers which can check things like key, mac, hash length for you, so you don't have to look around for the correct lengths.
 
+```java
+public interface SecretBox {    class Checker extends BaseChecker {        public static boolean checkKeyLen(int len) {            return KEYBYTES == len;        }        public static boolean checkMacLen(int len) {            return MACBYTES == len;        }        public static boolean checkNonceLen(int len) {            return NONCEBYTES == len;        }    }        interface Native {        void cryptoSecretBoxKeygen(byte[] key);    }        interface Lazy {        String cryptoSecretBoxKeygen();    }    }byte[] key = new byte[32];boolean correctLength = SecretBox.Checker.checkKeyLen(key.length);
+```
 
+### Convenience methods
+
+There are some convenience methods located in the `LazySodium` class that can aid you on your way. Here's a few:
+
+```text
+// Set a default charset
+LazySodium ls = new LazySodium(sodium, charset);
+
+// Remove then nulls off the end of 
+// an array. Useful for cryptoPwHashStr
+ls.removeNulls(byte[]);
+
+// Converts a byte array to a string
+// using the charset provided above. Warning
+// this will produce null bytes and unexpected
+// carriage returns. Please use sodiumBin2Hex(byte[])
+// to ensure no nulls or carriage breaks.
+ls.str(byte[] bs);
+
+// Convert a String to a byte array
+ls.bytes(String s);
+
+// Properly convert a byte array to a string
+// without null bytes and carriage arrays.
+// Be careful in providing the returned string
+// into functions that expect hexadecimal strings
+ls.sodiumBin2Hex(byte[] bs);
+```
 
