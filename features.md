@@ -29,7 +29,6 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | Operation | Native | Lazy | Tests |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
-| Advanced - all functions not implemented yet | ✘ | ✘ | ✘ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✘ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
 | Detached - some `detached` functions not implemented | ✘ | ✘ | ✘ |
@@ -41,6 +40,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | Random - several random functions | ✔ | ✔ | ✔ |
 | SecretBox - `crypto_secretbox*` functions | ✔ | ✔ | ✔ |
 | SecretStream - `crypto_secretstream*` functions | ✔ | ✔ | ✔ |
+| SHA256/SHA512 - `crypto_hash*` functions | ✔ | ✔ | ✔ |
 | ShortHash - `crypto_shorthash*` functions | ✔ | ✔ | ✔ |
 | Sign - `crypto_sign*` functions | ✔ | ✔ | ✔ |
 
