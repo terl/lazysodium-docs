@@ -43,7 +43,7 @@ String key = secretBoxLazy.cryptoSecretBoxKeygen();
 
 As you can see, the C code has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`.
 
-### Initialising
+### Usage
 
 #### 1. Initialise Sodium
 
