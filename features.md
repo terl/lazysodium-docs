@@ -27,11 +27,10 @@ description: >-
 A checkmark in the `Native` column means that the particular operation has C native functions written in the APIs language. A checkmark in the `Lazy` column means that the particular operation has been smartly implemented so that the developer has an effortless experience. A checkmark in the `Tests` column means that testing has been performed on that operation.
 
 | Operation | Native | Lazy | Tests |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✘ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
-| Detached - some `detached` functions not implemented | ✘ | ✘ | ✘ |
 | GenericHash - `crypto_generichash*` functions | ✔ | ✔ | ✔ |
 | KeyDerivation - `crypto_kdf*` functions | ✔ | ✔ | ✔ |
 | KeyExchange - `crypto_kx*` functions | ✔ | ✔ | ✔ |
