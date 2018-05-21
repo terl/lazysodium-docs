@@ -16,7 +16,7 @@ Here are two equivalent functions in Lazysodium that do the same thing. They bot
 
 ```java
 
-public interface SecretBox {    interface Native {        void cryptoSecretBoxKeygen(byte[] key);    }    interface Lazy {        String cryptoSecretBoxKeygen();    }    }
+public interface SecretBox {    // Function 1    interface Native {        void cryptoSecretBoxKeygen(byte[] key);    }        // Function 2    interface Lazy {        String cryptoSecretBoxKeygen();    }    }
 ```
 
 You'd use them like like this:
