@@ -15,7 +15,7 @@ description: >-
 * [x] Up-to-date with the awesome [Libsodium](https://github.com/jedisct1/libsodium) library \(version 1.0.1.6\).
 * [x] Bundled and compiled native libraries so you don't have to.
 * [x] Reactive and fast release cadence.
-* [x] [Bring your own Libsodium](self-providing-libsodium.md) native libraries.
+* [x] [Bring your own Libsodium](self-provisioning-libsodium.md) native libraries.
 * [x] [Lazysodium for Android](https://github.com/terl/lazysodium-android) and [Lazysodium for Java](https://github.com/terl/lazysodium-java) both benefit from the same codebase.
 * [x] They both have been designed with JNA [Direct Mapping](https://github.com/java-native-access/jna/blob/master/www/DirectMapping.md) for extra speed.
 * [x] Architected in a composite oriented fashion to allow developers to narrow what operation they want to use at any time - less opportunity for bugs.

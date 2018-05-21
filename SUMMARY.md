@@ -5,7 +5,7 @@
 * [Features](features.md)
 * [Getting started](getting-started.md)
 * [Handbook](handbook.md)
-* [Self-providing Libsodium](self-providing-libsodium.md)
+* [Self-provisioning Libsodium](self-provisioning-libsodium.md)
 * [Contributions](contributions.md)
 * [FAQ](faq.md)
 

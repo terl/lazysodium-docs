@@ -4,7 +4,7 @@ description: >-
   fine! On this page, we'll help you do that.
 ---
 
-# Self-providing Libsodium
+# Self-provisioning Libsodium
 
 ## Compiling your own Libsodium
 
@@ -53,7 +53,7 @@ $ ./dist-build/android-armv7-a.sh
 
 ## Libsodium native library location
 
-After [compiling](self-providing-libsodium.md) Libsodium you have to make sure that the resulting files `libsodium.so/libsodium.dylib/libsodium.dll (i.e the native libraries)` are accessible by your Java or Android program. There are a myriad of ways you can make the native Libsodium files accessible:
+After [compiling](self-provisioning-libsodium.md) Libsodium you have to make sure that the resulting files `libsodium.so/libsodium.dylib/libsodium.dll (i.e the native libraries)` are accessible by your Java or Android program. There are a myriad of ways you can make the native Libsodium files accessible:
 
 1.  On program start-up, copy them to a temporary location.
 2. Set `java.library.path`
