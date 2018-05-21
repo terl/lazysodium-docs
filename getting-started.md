@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page allows you to get the hand of Lazysodium and its relationship with
-  Libsodium.
+  This page allows you to get started with Lazysodium. Understand how to
+  initialise LazySodium and how to use its functions correctly.
 ---
 
 # Getting started
