@@ -24,7 +24,7 @@ You'd use them like like this:
 ```java
 // Create a LazySodium instance near the start
 // of program execution.
-LazySodium ls = new LazySodium(new SodiumJava());
+LazySodiumJava ls = new LazySodiumJava(new SodiumJava());
 
 // ...
 
@@ -79,7 +79,7 @@ There are some convenience methods located in the `LazySodium` class that can ai
 
 ```text
 // Set a default charset
-LazySodium ls = new LazySodium(sodium, charset);
+LazySodiumJava ls = new LazySodiumJava(sodium, charset);
 
 // Remove then nulls off the end of 
 // an array. Useful for cryptoPwHashStr

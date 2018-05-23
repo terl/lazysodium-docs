@@ -16,7 +16,7 @@ We wanted developers to have an effortless experience using cryptography. Every 
 
 #### Why create both Lazysodium for Java and Lazysodium for Android? Aren't they the same?
 
-Even though you can code in Java on Android, it does not mean that Android conforms to Java's semantics surrounding the build and packaging phases. For example, Java packages files as a \`jar\` and Android packages files as an \`aar\`. This is so that you can include \`res\` files in your Android projects. This is why we have both Lazysodium for Android and Lazysodium for Java even if the former is just a wrapper around the latter.
+Even though you can code in Java on Android, it does not mean that Android conforms to Java's semantics surrounding the build and packaging phases. For example, Java packages files as a `jar` and Android packages files as an `aar`. This is so that you can include `res` files in your Android projects. This is why we have both Lazysodium for Android and Lazysodium for Java even if the former is just a wrapper around the latter.
 
 #### Lazysodium contains a bug.
 

@@ -167,6 +167,12 @@ public interface GenericHash {
 After adding the `Native` and `Lazy` variants, you can now move onto the actual implementation, which you will add to `LazySodium.java`. First add the implementations to the top of the class:
 
 ```java
+// Add to LazySodium because GenericHashing is
+// compatible on both Android and Java.
+// You would add the following line to
+// LazySodiumJava if it was only compatible on
+// Java, or LazySodiumAndroid if it was only
+// compatible on Android.
 public class LazySodium implements
         Base,
         Random,
@@ -179,10 +185,12 @@ public class LazySodium implements
 }
 ```
 
-Then implement the functions:
+In the above block of code we're adding it to `LazySodium` because the functions inside `GenericHash` are compatible with both Java and Android. If `GenericHash` was only compatible with Android, you would add the line above and the implementation to `LazySodiumAndroid` instead. If GenericHash was only compatible with Java, then you would add the line above and the implementation to `LazySodiumJava`.
+
+Then provide an implementation to the functions:
 
 ```java
-public class LazySodium implements
+public class LazySodiumJava implements
         Base,
         Random,
         AEAD.Native, AEAD.Lazy,
