@@ -58,12 +58,14 @@ SodiumJava sodium = new SodiumJava();
 SodiumAndroid sodium = new SodiumAndroid();
 
 // Or you can supply a path. The exact semantics
-// are outlined in Sodium.java
+// are outlined in SodiumJava.java or SodiumAndroid.java
 SodiumJava sodium = new SodiumJava("/absolute/path/to/libsodium");
 SodiumAndroid sodium = new SodiumAndroid("/absolute/path/to/directory/of/android/ABIS");
 ```
 
-The above code loads the _native_ C Libsodium library from Lazysodium's `resources` folder \(if you're on Java, that is\). The above code also demonstrates that you can also provide a path to your own Libsodium file. This is the preferred choice if you are running on a operating system or platform which may not be mainstream and so have compiled Libsodium yourself. If you need some hints on how to compile please see the [self-provisioning page](self-provisioning-libsodium.md).
+The first 1 to 6 lines demonstrates auto-loading of the prepackaged _native_ C Libsodium library from Lazysodium's `resources` folder \(if you're on Java, that is\). In lines 7 to 11 the code demonstrates that you can provide a path to your own Libsodium file. This is the preferred choice if you are running on a operating system or platform which may not be mainstream and so have compiled Libsodium yourself. Or if you simply don't trust us.
+
+**Note:** If you need some hints on how to self-provide your own Libsodium native library please see the [self-provisioning page](self-provisioning-libsodium.md).
 
 For Linux, the native Libsodium library will be contained in a `libsodium.so` file. For Mac, it's called `libsodium.dylib`. For Windows, it's called `libsodium.dll`. For Android, it's `libsodium.so`, but it's **NOT** the same as the Linux `libsodium.so`, it's compiled differently.
 

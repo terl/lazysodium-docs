@@ -27,19 +27,19 @@ description: >-
 A checkmark in the `Native` column means that the particular operation has C native functions written in the APIs language. A checkmark in the `Lazy` column means that the particular operation has been smartly implemented so that the developer has an effortless experience. A checkmark in the `Tests` column means that testing has been performed on that operation.
 
 | Operation | Native | Lazy | Tests |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✘ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
 | [Diffie-Hellman](https://download.libsodium.org/doc/advanced/scalar_multiplication.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
-| [Ed25519 to Curve25519](https://download.libsodium.org/doc/advanced/ed25519-curve25519.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
+| Ed25519 to Curve25519 - `crypto_sign_ed25519` functions | ✔ | ✔ | ✔ |
 | GenericHash - `crypto_generichash*` functions | ✔ | ✔ | ✔ |
 | [HMAC-SHA-2](https://download.libsodium.org/doc/advanced/hmac-sha2.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
 | KeyDerivation - `crypto_kdf*` functions | ✔ | ✔ | ✔ |
 | KeyExchange - `crypto_kx*` functions | ✔ | ✔ | ✔ |
 | Padding - several padding functions | ✔ | ✔ | ✔ |
 | PwHash - `crypto_pwhash*`functions | ✔ | ✔ | ✔ |
-| Random - several random functions | ✔ | ✔ | ✔ |
+| Random | ✔ | ✔ | ✔ |
 | Scrypt - `crypto_pwhash_scrypt*` functions | ✔ | ✔ | ✔ |
 | SecretBox - `crypto_secretbox*` functions | ✔ | ✔ | ✔ |
 | SecretStream - `crypto_secretstream*` functions | ✔ | ✔ | ✔ |
@@ -47,6 +47,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | ShortHash - `crypto_shorthash*` functions | ✔ | ✔ | ✔ |
 | Sign - `crypto_sign*` functions | ✔ | ✔ | ✔ |
 | [Stream Ciphers](https://download.libsodium.org/doc/advanced/stream_ciphers.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
+| SecureMemory - `sodium_m` functions | ✔ | ✘ | ✔ |
 
 
 
