@@ -6,7 +6,7 @@ description: >-
 
 # Getting started
 
-Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in the [Lazysodium for Java's readme](https://github.com/terl/lazysodium-java) and [Lazysodium for Android's readme](https://github.com/terl/lazysodium-android).
+Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in [this page](installation.md). 
 
 ### Read the docs
 
