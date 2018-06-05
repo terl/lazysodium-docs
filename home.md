@@ -22,3 +22,7 @@ Please view the [Features](features.md) page for more details.
 
 Please view the [FAQ](faq.md) page for more info.
 
+### Where is your GPG Key?
+
+See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
+
