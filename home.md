@@ -26,3 +26,7 @@ Please view the [FAQ](faq.md) page for more info.
 
 See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
+### Become a supporter
+Consider supporting us by clicking on the button below.
+
+<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="140" /></a>
