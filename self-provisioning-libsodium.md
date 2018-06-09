@@ -1,7 +1,5 @@
 ---
-description: >-
-  If you want to use your own Libsodium native library rather than ours, that's
-  fine! On this page, we'll help you do that.
+description: 'In this section, we''ll see how you''d compile the native libsodium libraries.'
 ---
 
 # Self-provisioning Libsodium

@@ -1,7 +1,3 @@
----
-description: What to do if you've found an issue or want to contribute code to Lazysodium.
----
-
 # Contributions
 
 ##  Introduction

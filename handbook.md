@@ -1,9 +1,3 @@
----
-description: >-
-  A more detailed look into using Lazysodium and common pitfalls to watch out
-  for.
----
-
 # Handbook
 
 This page assumes you've read Getting started.

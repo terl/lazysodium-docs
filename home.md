@@ -4,29 +4,31 @@ description: Provides a brief overview of the Lazysodium project and its goals.
 
 # Home
 
-### Why Lazysodium?
+## Why Lazysodium?
 
 The problem with current cryptography libraries is that they can be one of 4 things: difficult to use, poorly documented, out of date or poorly architected.
 
 So we built Lazysodium to make it **absolutely effortless** to get started with cryptography. We picked [Libsodium](https://github.com/jedisct1/libsodium) `1.0.16` as our underlying C library. Libsodium is an immensely powerful, well-tested and well-audited cryptography library that we found was perfect for securing all types of things.
 
-### Supported languages
+## Supported languages
 
 Currently Lazysodium only supports [Android](https://github.com/terl/lazysodium-android) and [Java](https://github.com/terl/lazysodium-java).
 
-### Features
+## Features
 
 Please view the [Features](features.md) page for more details.
 
-### Questions
+## Questions
 
 Please view the [FAQ](faq.md) page for more info.
 
-### Where is your GPG Key?
+## Where is your GPG Key?
 
 See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
-### Become a supporter
+## Become a supporter
+
 Consider supporting us by clicking on the button below.
 
-<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="140" /></a>
+[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)
+

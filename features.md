@@ -1,9 +1,3 @@
----
-description: >-
-  View the general features of Lazysodium the status of Lazysodium's currently
-  added operations.
----
-
 # Features
 
 ### General
@@ -29,12 +23,12 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | Operation | Native | Lazy | Tests |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
-| AEAD -`crypto_aead*` functions | ✔ | ✔ | ✘ |
+| AEAD -`crypto_aead*` functions | ✔ | ✔ | ✔ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
 | [Diffie-Hellman](https://download.libsodium.org/doc/advanced/scalar_multiplication.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
 | Ed25519 to Curve25519 - `crypto_sign_ed25519` functions | ✔ | ✔ | ✔ |
 | GenericHash - `crypto_generichash*` functions | ✔ | ✔ | ✔ |
-| [HMAC-SHA-2](https://download.libsodium.org/doc/advanced/hmac-sha2.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
+| [HMAC-SHA-2](https://download.libsodium.org/doc/advanced/hmac-sha2.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✔ | ✔ | ✔ |
 | KeyDerivation - `crypto_kdf*` functions | ✔ | ✔ | ✔ |
 | KeyExchange - `crypto_kx*` functions | ✔ | ✔ | ✔ |
 | Padding - several padding functions | ✔ | ✔ | ✔ |

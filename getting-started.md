@@ -1,7 +1,8 @@
 ---
 description: >-
-  This page allows you to get started with Lazysodium. Understand how to
-  initialise LazySodium and how to use its functions correctly.
+  Before we begin, please ensure you have added Lazysodium as a dependency in
+  your project. This is outlined in the
+  [readme](https://github.com/terl/lazysodium-java#get-started).
 ---
 
 # Getting started

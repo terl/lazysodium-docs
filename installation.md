@@ -1,9 +1,3 @@
----
-description: >-
-  You can install Lazysodium in various ways. Here's a short list of the ways in
-  which you can install Lazysodium.
----
-
 # Installation
 
 This page is devoted to showing you how to install Lazysodium into your project. 
