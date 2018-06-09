@@ -18,6 +18,13 @@ We wanted developers to have an effortless experience using cryptography. Every 
 
 Even though you can code in Java on Android, it does not mean that Android conforms to Java's semantics surrounding the build and packaging phases. For example, Java packages files as a `jar` and Android packages files as an `aar`. This is so that you can include `res` files in your Android projects. This is why we have both Lazysodium for Android and Lazysodium for Java even if the former is just a wrapper around the latter.
 
+### Who funds Lazysodium?
+Funding comes from the company that owns Lazysodium, [Terl](https://terl.co). However, we want our open-source projects to live a life of their own independent of any business. That's why we ask you to become a supporter. Your money goes towards our open-source projects first and foremost. If Patreon's not your style then please suggest another avenue through our issue tracker. You can read more about our decisions to open a Patreon account by clicking the button below.
+
+<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="120" /></a>
+
+https://www.patreon.com/terlacious 
+
 ### Lazysodium contains a bug.
 
 We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the \[issue tracker\]\(https://github.com/terl/lazysodium-java/issues\), that'd be perfect.
