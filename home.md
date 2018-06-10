@@ -28,7 +28,10 @@ See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
 ## Become a supporter
 
-Consider supporting us by clicking on the button below.
+Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts.
 
-[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)
+<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="140" /></a>
+<br>
+<a href="https://liberapay.com/terlacious/"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png" width="68" /></a>
+
 
