@@ -8,11 +8,12 @@ Hello there! Welcome to the official documentation for Lazysodium. Use the conte
 
 ## Become a supporter
 
-Lazysodium needs money to survive. We've setup a Patreon account for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through Patreon. If Patreon's not your style then please suggest another avenue through our issue tracker.
+Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts.
 
-[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)
+<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="140" /></a>
+<br>
+<a href="https://liberapay.com/terlacious/"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png" width="68" /></a>
 
-[https://www.patreon.com/terlacious](https://www.patreon.com/terlacious)
 
 ## Quick links
 
