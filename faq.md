@@ -20,11 +20,12 @@ Even though you can code in Java on Android, it does not mean that Android confo
 
 ## Who funds Lazysodium?
 
-Funding comes from the company that owns Lazysodium, [Terl](https://terl.co). However, we want our open-source projects to live a life of their own independent of any business. That's why we ask you to become a supporter. Your money goes towards our open-source projects first and foremost. If Patreon's not your style then please suggest another avenue through our issue tracker. You can read more about our decisions to open a Patreon account by clicking the button below.
+Funding comes from the company that owns Lazysodium, [Terl](https://terl.co). However, we want our open-source projects to live a life of their own independent of any business. That's why we ask you to become a supporter. Your money goes towards our open-source projects first and foremost. You can read more about our decisions to open these accounts by clicking on the following buttons.
 
-[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)
+<a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="140" /></a>
+<br>
+<a href="https://liberapay.com/terlacious/"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png" width="68" /></a>
 
-[https://www.patreon.com/terlacious](https://www.patreon.com/terlacious)
 
 ## Lazysodium contains a bug.
 
