@@ -8,5 +8,6 @@
 * [Handbook](handbook.md)
 * [Self-provisioning Libsodium](self-provisioning-libsodium.md)
 * [Contributions](contributions.md)
+* [Sponsors](sponsors.md)
 * [FAQ](faq.md)
 

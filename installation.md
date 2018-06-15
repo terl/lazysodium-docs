@@ -1,6 +1,6 @@
 # Installation
 
-This page is devoted to showing you how to install Lazysodium into your project. 
+This page is devoted to showing you how to install Lazysodium into your project.
 
 ## Java
 
@@ -42,7 +42,7 @@ dependencies {
       <url>https://dl.bintray.com/terl/lazysodium-maven</url>
     </repository>
  </repositories>
- 
+
 <dependency>
   <groupId>com.goterl.lazycode</groupId>
   <artifactId>lazysodium-java</artifactId>
