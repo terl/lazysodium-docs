@@ -68,7 +68,7 @@ Lazysodium for Android requires:
 
 ### Add the library
 
-Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-java) \(located in the bottom right\).
+Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\).
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -82,7 +82,7 @@ repositories {
 
 // Add to dependencies section
 dependencies {
-    implementation "com.goterl.lazycode:lazysodium-java:VERSION_NUMBER"
+    implementation "com.goterl.lazycode:lazysodium-android:VERSION_NUMBER@aar"
 }
 ```
 {% endtab %}
