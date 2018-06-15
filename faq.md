@@ -20,10 +20,20 @@ Even though you can code in Java on Android, it does not mean that Android confo
 
 ## Who funds Lazysodium?
 
-Funding comes from the company that owns Lazysodium, [Terl](https://terl.co). However, we want our open-source projects to live a life of their own independent of any business. That's why we ask you to become a supporter. Your money goes towards our open-source projects first and foremost. You can read more about our decisions to open these accounts by clicking on the following buttons.
+Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts. More information is provided when you click on one of our support avenues.
 
-[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)   
- [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png)](https://liberapay.com/terlacious/)
+|  |Patreon       | Liberapay      | Terl Supporters |
+|----|--------------|---------------------|---|
+|    | <a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="100" /></a> | <a href="https://liberapay.com/terlacious/"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png" width="40" /></a> | <a href="https://terl.co/support-us"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/terl_slant_square.png" width="40" /></a> |
+|  One-time  | ✗ | ✗ | ✓ |
+|  Weekly  | ✗ | ✓ | ✓ |
+|  Monthly  | ✓ | ✓ | ✓ |
+|  Yearly  | ✗ | ✓ | ✓ |
+|  Rewards  | ✓ | ✗ | ✓ |
+|  Currencies  | USD | USD, EUR | Over 100|
+
+## Does Lazysodium take sponsors?
+Yes we do! View our Sponsor page to find out more.
 
 ## Lazysodium contains a bug.
 
