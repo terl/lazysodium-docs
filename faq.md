@@ -22,22 +22,45 @@ Even though you can code in Java on Android, it does not mean that Android confo
 
 Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts. More information is provided when you click on one of our support avenues.
 
-|  |Patreon       | Liberapay      | Terl Supporters |
-|----|--------------|---------------------|---|
-|    | <a href="https://www.patreon.com/terlacious"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png" width="100" /></a> | <a href="https://liberapay.com/terlacious/"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png" width="40" /></a> | <a href="https://terl.co/support-us"><img src="https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/terl_slant_square.png" width="40" /></a> |
-|  One-time  | ✗ | ✗ | ✓ |
-|  Weekly  | ✗ | ✓ | ✓ |
-|  Monthly  | ✓ | ✓ | ✓ |
-|  Yearly  | ✗ | ✓ | ✓ |
-|  Rewards  | ✓ | ✗ | ✓ |
-|  Currencies  | USD | USD, EUR | Over 100|
+|  | Patreon | Liberapay | Terl Supporters |
+| --- | --- | --- | --- |
+|  | [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious) | [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png)](https://liberapay.com/terlacious/) | [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/terl_slant_square.png)](https://terl.co/support-us) |
+| One-time | ✗ | ✗ | ✓ |
+| Weekly | ✗ | ✓ | ✓ |
+| Monthly | ✓ | ✓ | ✓ |
+| Yearly | ✗ | ✓ | ✓ |
+| Rewards | ✓ | ✗ | ✓ |
+| Currencies | USD | USD, EUR | Over 100 |
 
 ## Does Lazysodium take sponsors?
+
 Yes we do! View our Sponsor page to find out more.
 
 ## Lazysodium contains a bug.
 
-We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the \[issue tracker\]\([https://github.com/terl/lazysodium-java/issues\](https://github.com/terl/lazysodium-java/issues%29\), that'd be perfect.
+We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the issue tracker [https://github.com/terl/lazysodium-java/issues](https://github.com/terl/lazysodium-java/issues%29\), that'd be perfect.
+
+## I get the `Failed resolution of: Lcom/sun/jna/Native` error, how do I resolve it?
+
+This error occurs if you don't include JNA as a dependency in your project. Please add the following line in your project:
+
+{% tabs %}
+{% tab title="Android" %}
+```groovy
+dependencies {
+    implementation 'net.java.dev.jna:jna:4.5.1@aar' // Add this line
+}
+```
+{% endtab %}
+
+{% tab title="Java" %}
+```groovy
+dependencies {
+    implementation 'net.java.dev.jna:jna:4.5.1' // Add this line
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## How do I verify a file through GPG?
 

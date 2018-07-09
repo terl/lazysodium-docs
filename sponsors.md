@@ -1,7 +1,3 @@
----
-description: A list of all Lazysodium's sponsors go here.
----
-
 # Sponsors
 
 ### Why sponsor us?
