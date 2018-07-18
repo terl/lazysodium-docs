@@ -2,7 +2,7 @@
 description: Provides a brief overview of the Lazysodium project and its goals.
 ---
 
-# Home
+# About
 
 ## Why Lazysodium?
 

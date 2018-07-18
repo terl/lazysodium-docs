@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Lazysodium: making cryptography effortless](README.md)
-* [Home](home.md)
+* [About](about.md)
 * [Features](features.md)
 * [Installation](installation.md)
 * [Getting started](getting-started.md)

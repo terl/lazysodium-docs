@@ -6,7 +6,7 @@ description: Welcome to Lazysodium's documentation.
 
 Hello there! Welcome to the official documentation for Lazysodium. Use the contents pane to get started. Or view the links below.
 
-## [About Lazysodium](home.md)
+## [About Lazysodium](about.md)
 
 Learn more about Lazysodium and its goals.
 
