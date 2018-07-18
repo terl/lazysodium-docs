@@ -12,7 +12,7 @@ So we built Lazysodium to make it **absolutely effortless** to get started with 
 
 ## Supported languages
 
-Currently Lazysodium only supports [Android](https://github.com/terl/lazysodium-android) and [Java](https://github.com/terl/lazysodium-java).
+Currently Lazysodium only supports [Android](https://github.com/terl/lazysodium-android) and [Java](https://github.com/terl/lazysodium-java). You can also drop Lazysodium in Kotlin projects via [Lazysodium for Java](https://github.com/terl/lazysodium-java).
 
 ## Features
 
@@ -22,7 +22,7 @@ Please view the [Features](features.md) page for more details.
 
 Please view the [FAQ](faq.md) page for more info.
 
-## Where is your GPG Key?
+## Our GPG Key
 
 See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
