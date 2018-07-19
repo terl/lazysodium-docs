@@ -11,4 +11,5 @@
 * [Contributions](contributions.md)
 * [Sponsors](sponsors.md)
 * [FAQ](faq.md)
+* [Migrations](migrations.md)
 
