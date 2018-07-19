@@ -15,7 +15,7 @@ Before we begin, please ensure you have added Lazysodium as a dependency in your
 
 ### How Lazysodium names its functions
 
-To understand how Lazysodium's naming works, here's a piece of code. Don't worry if you don't understand it, in the next section, we will break down each step, piece by piece.
+To understand how Lazysodium's naming works, here's a piece of code. Don't worry if you don't understand it just yet. In the next section, we will provide more information on what each step does.
 
 ```java
 // This is the native C function for generating a key.
@@ -48,7 +48,7 @@ As you can see, the C code has been camel-cased and encapsulated in a class that
 
 #### 1. Initialise Sodium
 
-The first step is to create a `sodium` object. The `sodium` object should only be initialised once as it loads the native Libsodium library.
+The first step is to create a `sodium` object. The `sodium` object should be initialised only once as it loads the native Libsodium library.
 
 ```java
 // Place near the start of the program's execution.
@@ -74,7 +74,7 @@ We shall leave you to find out how best to detect your platform as it may vary d
 
 #### 2. Initialise Lazysodium
 
-After initialising a `sodium` object you should now pass that `sodium` object to a `LazySodium` instance.
+After initialising a `sodium` object you should now pass that `sodium` object to a `LazySodium` instance. You can add a charset, which will make Lazysodium functions like `lazySodium.str(...)` use the correct charset.
 
 ```java
 // Optionally add a default charset.
@@ -86,7 +86,7 @@ LazySodiumAndroid lazySodium = new LazySodiumAndroid(sodium, StandardCharsets.UT
 
 #### 3. Native or Lazy
 
-Now that you have a `lazySodium` object, you can start using Libsodium lazily or natively. The way we've developed Lazysodium is that you can cast the `lazySodium` object to the interfaces that you need at that time. It makes it much easier for you to code. Modern text editors and IDEs can auto-suggest the code that you are interested in. Here's an example of said casting to accomplish password hashing.
+Now that you have a `lazySodium` object, you can start using Libsodium lazily or natively. The way we've developed Lazysodium is that you can cast the `lazySodium` object to the interfaces that you need at that time. It makes it much easier for you to code. Modern text editors and IDEs can auto-suggest the code that you are interested in. Here's an example of said casting to accomplish password hashing. If you don't understand what `cryptoPwHashStr` means then please [view the Libsodium documentation](https://download.libsodium.org/doc/password_hashing/the_argon2i_function.html) that provides excellent information on what it does.
 
 ```java
 LazySodiumJava lazySodium = new LazySodiumJava(sodium);
@@ -120,9 +120,10 @@ In one of the first steps above, you created a `sodium` object. You can actually
 
 ```java
 SodiumJava sodium = new SodiumJava();
+// Or if you're on Android: Sodium sodium = new SodiumAndroid();
 
-// Or android...
-// Sodium sodium = new SodiumAndroid();
+// You can also get the sodium object like this...
+SodiumJava sodium = lazySodium.getSodium();
 
 // Use a raw password hash
 int res = sodium.crypto_pwhash(outputHash,
@@ -139,19 +140,16 @@ if (res == 0) {
 }
 ```
 
-It's just another way Lazysodium provides you to do different things with potentially the same outcomes 😄
-
-To view all the functions, please view the [`Sodium`](https://github.com/terl/lazysodium-java/blob/master/src/main/java/com/goterl/lazycode/lazysodium/Sodium.java) class.
+It's just another way Lazysodium provides you to do different things with potentially the same outcomes 😄. To view every `Native` function, please browse the [`Sodium`](https://github.com/terl/lazysodium-java/blob/master/src/main/java/com/goterl/lazycode/lazysodium/Sodium.java) class.
 
 #### 5. Constants
 
 All constants are also located in their relevant operational interfaces.
 
-Let's say for example you were performing a key exchange. The first thing you do is generate a key. You opted to use this native method `KeyExchange.cryptoBoxKeypair(byte[] publicKey, byte[] secretKey)`. But that leaves you wondering how many bytes to use for `publicKey` and `secretKey`. The `KeyExchange` interface has these byte sizes available for you:
+Let's say for example you were performing a key exchange. The first thing you do is generate a key. You opted to use this native method `KeyExchange.cryptoBoxKeypair(Key publicKey, Key secretKey)`. But that leaves you wondering how many bytes to use for `publicKey` and `secretKey`. The `KeyExchange` interface has these byte sizes available for you:
 
 ```java
 public interface KeyExchange {
-
     int PUBLICKEYBYTES = 32;
     int SECRETKEYBYTES = 32;
     int SESSIONKEYBYTES = 32;
@@ -166,5 +164,5 @@ There is an obvious naming strategy to our constants. For example, `crypto_kx_PU
 
 ## Extra code samples
 
-Please review the [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples. They are pretty easy to follow.
+View [this page](more-examples.md) for more examples. Also, please review the [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples.
 
