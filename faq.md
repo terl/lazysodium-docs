@@ -36,6 +36,10 @@ Lazysodium needs money to survive. We've setup the following accounts for you to
 
 Yes we do! View our Sponsor page to find out more.
 
+## Does Lazysodium have example apps?
+
+Yes! Please download it from the [Google Play Store](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example).
+
 ## Lazysodium contains a bug.
 
 We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the issue tracker [https://github.com/terl/lazysodium-java/issues](https://github.com/terl/lazysodium-java/issues%29\), that'd be perfect.

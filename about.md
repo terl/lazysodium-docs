@@ -46,6 +46,12 @@ System.out.println(subKey.getAsHexString());
 
 As you can see Lazysodium makes cryptography effortless!
 
+## Apps
+
+There is a Lazysodium app available on Google Play that shows you some operations, such as Symmetric Key:
+
+![Download Lazysodium](.gitbook/assets/google-play-badge.png)
+
 ## Supported languages
 
 Currently Lazysodium only supports [Android](https://github.com/terl/lazysodium-android) and [Java](https://github.com/terl/lazysodium-java). You can also drop Lazysodium in Kotlin projects via [Lazysodium for Java](https://github.com/terl/lazysodium-java).
