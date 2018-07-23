@@ -48,7 +48,7 @@ As you can see Lazysodium makes cryptography effortless!
 
 ## Apps
 
-There is a Lazysodium app available on Google Play that shows you some operations, such as Symmetric Key:
+There is a Lazysodium app available on [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) that shows you some operations, such as Symmetric Key:
 
 ![Download Lazysodium](.gitbook/assets/google-play-badge.png)
 
