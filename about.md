@@ -70,8 +70,5 @@ See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
 ## Become a supporter
 
-Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts.
-
-[![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious)   
- [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/liberapay.png)](https://liberapay.com/terlacious/)
+Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please [visit the FAQ to find out more](faq.md#who-funds-lazysodium).
 
