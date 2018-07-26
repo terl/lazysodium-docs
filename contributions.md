@@ -26,7 +26,7 @@ If you want to contribute code, you first have to understand how Lazysodium work
 
 ### Lazysodium and JNA
 
-Lazysodium uses [JNA with Direct Mapping](https://github.com/java-native-access/jna/blob/master/www/DirectMapping.md) to access native libraries. This means that you can write the native functions in Java without having to use more complex tools such as JNI and Swig.
+Lazysodium uses [JNA with Direct Mapping](https://github.com/java-native-access/jna/blob/master/www/DirectMapping.md) to access native libraries. This means that you can write the native functions in Java without having to use more complex tools such as JNI and Swig. This also sadly means that we need to enclose all the native functions in one class, unless we want to load the native libsodium library multiple times. All the Android and Java compatible native functions are in a class called `Sodium.java`, there's also a `SodiumJava.java` which only has the functions which work on Java \(more higher spec machines\).
 
 ### Read the docs
 
@@ -34,9 +34,9 @@ In order to complete the next section, you must have the Libsodium docs page ope
 
 ### Adding new functions
 
-Let's say you've found a function in Libsodium that does not exist in Lazysodium and you really want it. As Lazysodium uses JNA, adding a new function is pretty simple.
+Let's say you've found a function in Libsodium that does not exist in Lazysodium and you really want to add it to Lazysodium. As Lazysodium uses JNA, adding a new function is pretty simple.
 
-Theoretically, let's assume that you really wanted the function `crypto_generichash` as it did not exist in the Lazysodium library. The first thing you'd do is add the function definition to the `Sodium.java` class. This class is the "circuitry" behind Lazysodium. 
+Theoretically, let's assume that you really wanted the function `crypto_generichash` as it did not exist in the Lazysodium library. The first thing you'd do is add the function definition to the `Sodium.java` class. This class is the "brain" behind Lazysodium. 
 
 So how would you convert the following into Java?
 
@@ -56,7 +56,7 @@ public native int crypto_generichash(
 );
 ```
 
-The reason why JNA is so cool is that it maps those C types for you. For example, `unsigned char *out` and `size_t outlen` maps to `byte[] out` and `int outLen`, respectively. There are so many examples already in [`Sodium.java`](https://github.com/terl/lazysodium-java/blob/master/src/main/java/com/goterl/lazycode/lazysodium/Sodium.java) that it would be pointless writing more examples here.
+The reason why JNA is so cool is that it maps those C types for you. For example, `unsigned char *out` and `size_t outlen` maps to `byte[] out` and `int outLen`, respectively. There are so many examples already in [`Sodium.java`](https://github.com/terl/lazysodium-java/blob/master/src/main/java/com/goterl/lazycode/lazysodium/Sodium.java) that it would be pointless writing more examples here, so just look in that class for more inspiration.
 
 You may run across some `state` parameters in those native functions. These convert to simple classes in Java. For example the  `crypto_generichash_init` function asks for a state:
 
@@ -186,7 +186,7 @@ In the above block of code we're adding it to `LazySodium` because the functions
 Then provide an implementation to the functions:
 
 ```java
-public class LazySodiumJava implements
+public class LazySodium implements
         Base,
         Random,
         AEAD.Native, AEAD.Lazy,
@@ -217,6 +217,14 @@ public class LazySodiumJava implements
     }
 }
 ```
+
+### Java and Android compatibility
+
+You'll note that we have different classes such as `Sodium`, `SodiumJava`, `LazySodium`, `LazySodiumJava`. Sometimes, a function or method does not run on Android but it does run on Java. Libsodium has a feature called "minimal mode" where certain functions of libsodium are reduced on devices which have constrained hardware. Lazysodium has compiled against minimal libsodium, meaning this feature is on by default. It does protect against developer's code weirdly failing.
+
+Minimal mode is turned on by default for devices that run Android and iOS. We've tested and most modern Android devices can handle _some_ of the more demanding functions in libsodium, these are typically devices on Android API 26 and above. 
+
+However, most cannot. This is why we've had to create `SodiumJava` as it contains those functions that are out of bounds of minimal mode \(i.e. non-minimal mode compatible functions go in `SodiumJava`\), whereas `Sodium` contains all the functions that are compatible with minimal mode \(i.e. minimal mode compatible functions go in `Sodium`\). Please note that `SodiumJava` extends `Sodium` so everything that works in `Sodium`, works in `SodiumJava`. The same logic applies to `LazySodiumJava`. `LazySodiumJava` implements all the non-minimal mode functions and `LazySodium` implements minimal mode functions.
 
 ### Adding constants
 
