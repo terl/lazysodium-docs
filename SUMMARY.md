@@ -9,7 +9,7 @@
 * [More examples](more-examples.md)
 * [Self-provisioning Libsodium](self-provisioning-libsodium.md)
 * [Contributions](contributions.md)
-* [Sponsors](sponsors.md)
 * [FAQ](faq.md)
+* [Sponsors](sponsors.md)
 * [Migrations](migrations.md)
 
