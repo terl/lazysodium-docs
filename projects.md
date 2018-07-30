@@ -8,5 +8,5 @@ The table below shows what the project is titled, a short description of the pro
 
 | **Name** | **Short description** | **Android**  | **Java** |
 | --- | --- |
-| \*\*\*\*[**Paseto**](https://paseto.io/)\*\*\*\* | Java Implementation of Platform-Agnostic Security Tokens.  | ✓ | ✓ |
+| \*\*\*\*[**Paseto**](https://paseto.io/)\*\*\*\* | Java Implementation of Platform-Agnostic Security Tokens.  | ✗ | ✓ |
 
