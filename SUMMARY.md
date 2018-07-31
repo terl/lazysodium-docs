@@ -5,7 +5,6 @@
 * [Features](features.md)
 * [Installation](installation.md)
 * [Getting started](getting-started.md)
-* [Handbook](handbook.md)
 * [More examples](more-examples.md)
 * [Self-provisioning Libsodium](self-provisioning-libsodium.md)
 * [Contributions](contributions.md)

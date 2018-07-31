@@ -26,7 +26,7 @@ The features of Lazysodium and the operations it currently supports.
 
 View how to get started quickly.
 
-## [Handbook](handbook.md)
+## [Handbook]()
 
 When you've finished getting started, view the Handbook for some vital information surrounding Lazysodium.
 

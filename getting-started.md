@@ -1,13 +1,14 @@
 ---
 description: >-
-  Before we begin, please ensure you have added Lazysodium as a dependency in
-  your project. This is outlined in the
-  [readme](https://github.com/terl/lazysodium-java#get-started).
+  This page helps you to get started with Lazysodium and also provides helpful
+  hints.
 ---
 
 # Getting started
 
-Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in [this page](installation.md). 
+Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in [the Installation page](installation.md). 
+
+## Part 1: Getting started
 
 ### Read the docs
 
@@ -162,7 +163,128 @@ public interface KeyExchange {
 
 There is an obvious naming strategy to our constants. For example, `crypto_kx_PUBLICKEYBYTES` is available in Lazysodium as `KeyExchange.PUBLICKEYBYTES`. Similarly, `crypto_shorthash_KEYBYTES` is available as `ShortHash.KEYBYTES`.
 
+## Part 2: Helpful hints
+
+### The Native and Lazy split
+
+We'd like to take an opportunity to show you the difference between using the Native interface and using the Lazy interface.
+
+Here are two equivalent functions in Lazysodium that do the same thing. They both create a secret key so that you can encrypt a message or file.
+
+```java
+public interface SecretBox {    
+      // Function 1    
+      interface Native {        
+            void cryptoSecretBoxKeygen(byte[] key);    
+      }        
+      // Function 2    
+      interface Lazy {        
+            String cryptoSecretBoxKeygen();    
+      }    
+}
+```
+
+You'd use them like like this:
+
+```java
+// Create a LazySodium instance near the start
+// of program execution.
+LazySodiumJava ls = new LazySodiumJava(new SodiumJava());
+
+// ...
+
+// Then you can cast to the interface, if you want
+// to help your IDE give you intelligent suggestions
+SecretBox.Lazy secretBoxLazy = (SecretBox.Lazy) ls;
+SecretBox.Native secretBoxNative = (SecretBox.Native) ls;
+
+// NATIVE
+byte[] secretBoxBytes = new byte[SecretBox.KEYBYTES];
+secretBoxNative.cryptoSecretBoxKeygen(secretBoxBytes);
+System.out.println(ls.str(secretBoxBytes));
+
+// LAZY
+Key key = secretBoxLazy.cryptoSecretBoxKeygen();
+System.out.println(key.getAsHexString());
+
+```
+
+The `Native` and `Lazy`  functions are practically the same BUT the Lazy functions almost always return `String`s in hexadecimal format.
+
+1. **Never** mix Native and Lazy functions, unless you know what you're doing.
+2. Lazy functions, **in most cases**, take and return hexadecimal strings - be careful and read the code's documentation to be sure.
+
+### Checker
+
+In some interfaces, you have static checkers which can check things like key, mac, hash length for you, so you don't have to look around for the correct lengths.
+
+```java
+public interface SecretBox {    
+    class Checker extends BaseChecker {        
+        public static boolean checkKeyLen(int len) {            
+            return KEYBYTES == len;        
+        }        
+        public static boolean checkMacLen(int len) {            
+            return MACBYTES == len;        
+        }
+        public static boolean checkNonceLen(int len) {            
+            return NONCEBYTES == len;        
+        }    
+    }        
+    interface Native {        
+        void cryptoSecretBoxKeygen(byte[] key);    
+    }
+    interface Lazy {        
+        String cryptoSecretBoxKeygen();    
+    }    
+}
+
+byte[] key = new byte[32];
+boolean correctLength = SecretBox.Checker.checkKeyLen(key.length);
+```
+
+### Convenience methods
+
+There are some convenience methods located in the `LazySodium` class that can aid you on your way. Here's a few:
+
+```java
+// Set a default charset
+LazySodiumJava ls = new LazySodiumJava(sodium, charset);
+
+// Remove then nulls off the end of 
+// an array. Useful for cryptoPwHashStr
+ls.removeNulls(byte[]);
+
+// Converts a byte array to a string
+// using the charset provided above. Warning
+// this will produce null bytes and unexpected
+// carriage returns. Please use sodiumBin2Hex(byte[])
+// to ensure no nulls or carriage breaks.
+ls.str(byte[] bs);
+
+// Convert a String to a byte array
+ls.bytes(String s);
+
+// Properly convert a byte array to a string
+// without null bytes and carriage arrays.
+// Be careful in providing the returned string
+// into functions that expect hexadecimal strings
+ls.sodiumBin2Hex(byte[] bs);
+```
+
 ## Extra code samples
 
-View [this page](more-examples.md) for more examples. Also, please review the [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples.
+### Lazysodium Examples
+
+The [Lazysodium Examples](https://github.com/terl/lazysodium-examples) project should provide you with a lot of sample code that will surely help you out. Look inside the appropriate folders for your use-case to view the readme's on how to run the example code.
+
+### Tests
+
+You can also review our [test classes](https://github.com/terl/lazysodium-java/tree/master/src/test/java) for more code samples.
+
+### Lazysodium: The Android App
+
+There is also a Lazysodium [open-source app](https://github.com/terl/lazysodium-examples/tree/master/android) available on [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) that allows you to see some operations:
+
+[![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
