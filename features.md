@@ -20,7 +20,7 @@
 
 A checkmark in the `Native` column means that the particular operation has C native functions written in the APIs language. A checkmark in the `Lazy` column means that the particular operation has been smartly implemented so that the developer has an effortless experience. A checkmark in the `Tests` column means that testing has been performed on that operation.
 
-| Operation | Native | Lazy | Tests |
+| **Operation** | **Native** | **Lazy** | **Tests** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✔ |
@@ -40,8 +40,10 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | SHA256/SHA512 - `crypto_hash*` functions | ✔ | ✔ | ✔ |
 | ShortHash - `crypto_shorthash*` functions | ✔ | ✔ | ✔ |
 | Sign - `crypto_sign*` functions | ✔ | ✔ | ✔ |
-| [Stream Ciphers](https://download.libsodium.org/doc/advanced/stream_ciphers.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
+| [Stream Ciphers](https://download.libsodium.org/doc/advanced/stream_ciphers.html) $$^1$$ - `crypto_stream*` functions | ✔ | ✔ |  |
 | SecureMemory - `sodium_m` functions | ✔ | ✘ | ✔ |
 
 
+
+1:  The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.
 
