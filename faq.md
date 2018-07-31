@@ -1,5 +1,5 @@
 ---
-description: Any questions go here.
+description: Some common questions and answers are written here.
 ---
 
 # FAQ

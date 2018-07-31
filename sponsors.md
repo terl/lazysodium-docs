@@ -1,3 +1,9 @@
+---
+description: >-
+  Sponsors will help us to keep developing Lazysodium. A list of all our
+  sponsors will appear here.
+---
+
 # Sponsors
 
 ### Why sponsor us?
