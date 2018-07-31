@@ -6,9 +6,9 @@ description: Any questions go here.
 
 ## Why should I use Lazysodium?
 
-We get it. You've tried a million other cryptography libraries and you're tired of performing mental gymnastics just to get something, anything working. We've done the work for you. We've compiled and wrapped the native libraries inside this project so you don't have to. Plus, we've designed our library in such a way that just makes it infinitely easier to work with.
+We get it. You've tried a million other cryptography libraries and you're tired of performing mental gymnastics just to get something, anything working. We've done the work for you. We've compiled and wrapped the native libraries inside this project so you don't have to. We've designed our library in such a way that just makes cryptography infinitely easier to work with and deploy in a matter of minutes.
 
-💯 💯
+Under the hood, we're using Libsodium, an excellent audited cryptography library that just works. We've implemented all the [features](features.md) of Libsodium in Lazysodium. To find out more about why we created Lazysodium visit the [about](about.md) page.
 
 ## Why is this project called Lazysodium?
 
@@ -17,6 +17,12 @@ We wanted developers to have an effortless experience using cryptography. Every 
 ## Why create both Lazysodium for Java and Lazysodium for Android? Aren't they the same?
 
 Even though you can code in Java on Android, it does not mean that Android conforms to Java's semantics surrounding the build and packaging phases. For example, Java packages files as a `jar` and Android packages files as an `aar`. This is so that you can include `res` files in your Android projects. This is why we have both Lazysodium for Android and Lazysodium for Java even if the former is just a wrapper around the latter.
+
+## Do you have any apps to showcase Lazysodium?
+
+As a matter of fact, we do! Visit [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) to see some of what Lazysodium can do.
+
+[![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
 ## Who funds Lazysodium?
 
