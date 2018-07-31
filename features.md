@@ -34,7 +34,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | Padding - several padding functions | ✔ | ✔ | ✔ |
 | PwHash - `crypto_pwhash*`functions | ✔ | ✔ | ✔ |
 | Random - several randomisation functions | ✔ | ✔ | ✔ |
-| Scrypt - `crypto_pwhash_scrypt*` functions | ✔ | ✔ | ✔ |
+| Scrypt - `crypto_pwhash_scrypt*` functions $$^2$$  | ✔ | ✔ | ✔ |
 | SecretBox - `crypto_secretbox*` functions | ✔ | ✔ | ✔ |
 | SecretStream - `crypto_secretstream*` functions | ✔ | ✔ | ✔ |
 | SHA256/SHA512 - `crypto_hash*` functions | ✔ | ✔ | ✔ |
@@ -45,5 +45,6 @@ A checkmark in the `Native` column means that the particular operation has C nat
 
 
 
-1:  The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.
+1:  The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.  
+2: The Android variant does not have functions of the following form: `cryptoPwHashScryptSalsa208*`
 
