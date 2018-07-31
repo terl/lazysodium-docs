@@ -25,7 +25,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✔ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
-| [Diffie-Hellman](https://download.libsodium.org/doc/advanced/scalar_multiplication.html) - open an [issue](https://github.com/terl/lazysodium-java/issues) if you want this | ✘ | ✘ | ✘ |
+| [Diffie-Hellman](https://download.libsodium.org/doc/advanced/scalar_multiplication.html) - `crypto_scalarmult*` functions | ✔ | ✔ | ✔ |
 | Ed25519 to Curve25519 - `crypto_sign_ed25519` functions | ✔ | ✔ | ✔ |
 | GenericHash - `crypto_generichash*` functions | ✔ | ✔ | ✔ |
 | [HMAC-SHA-2](https://download.libsodium.org/doc/advanced/hmac-sha2.html) - `crypto_auth_hmacsha*` functions | ✔ | ✔ | ✔ |
@@ -33,7 +33,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | KeyExchange - `crypto_kx*` functions | ✔ | ✔ | ✔ |
 | Padding - several padding functions | ✔ | ✔ | ✔ |
 | PwHash - `crypto_pwhash*`functions | ✔ | ✔ | ✔ |
-| Random | ✔ | ✔ | ✔ |
+| Random - several randomisation functions | ✔ | ✔ | ✔ |
 | Scrypt - `crypto_pwhash_scrypt*` functions | ✔ | ✔ | ✔ |
 | SecretBox - `crypto_secretbox*` functions | ✔ | ✔ | ✔ |
 | SecretStream - `crypto_secretstream*` functions | ✔ | ✔ | ✔ |
