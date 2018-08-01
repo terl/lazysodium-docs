@@ -49,8 +49,10 @@ A checkmark in the `Native` column means that the particular operation has C nat
 | [Stream Ciphers](https://download.libsodium.org/doc/advanced/stream_ciphers.html) $$^1$$ - `crypto_stream*` functions | ✔ | ✔ | ✔ |
 | SecureMemory - `sodium_m` functions | ✘ | ✔ | ✔ |
 
-
+### Footnotes
 
 1:  The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.  
 2: The Android variant does not have functions of the following form: `cryptoPwHashScryptSalsa208*`
+
+Please see [this question in the FAQ](faq.md#why-are-some-functions-unavailable-on-android) for the reason as to why these functions are not available on Android.
 

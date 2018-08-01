@@ -24,6 +24,10 @@ As a matter of fact, we do! Visit [Google Play](https://play.google.com/store/ap
 
 [![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
+## Why are some functions unavailable on Android?
+
+The reason why some functions are not included in Android, is because we have compiled Libsodium against "minimal mode" which means that more demanding functions won't run on low powered hardware. If you really want to use those functions recompile Libsodium in "full mode" and then [self provision it](self-provisioning-libsodium.md).
+
 ## Who funds Lazysodium?
 
 Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts. More information is provided when you click on one of our support avenues.
