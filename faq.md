@@ -54,6 +54,10 @@ Yes! Please download it from the [Google Play Store](https://play.google.com/sto
 
 We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the issue tracker [https://github.com/terl/lazysodium-java/issues](https://github.com/terl/lazysodium-java/issues%29\), that'd be perfect.
 
+## Every time I use Lazysodium I get an error like java.lang.UnsatisfiedLinkError: Unable to load library. What is this?
+
+This can occur for a number of reasons. Most commonly the error occurs when we try to load `libsodium.so / libsodium.dll / libsodium.dylib` - Lazysodium can't find it. Or, the error may occur for a totally different reason: The native Libsodium library \(i.e. the `libsodium.so / libsodium.dll / libsodium.dylib` files\) requests access to C functions which your OS does not have and so it results in a UnsatsifiedLinkError. Confusing, huh? There's more info in [this](https://github.com/terl/lazysodium-java/issues/34) issue. 
+
 ## I get the `Failed resolution of: Lcom/sun/jna/Native` error, how do I resolve it?
 
 This error occurs if you don't include JNA as a dependency in your project. Please add the following line in your project:
