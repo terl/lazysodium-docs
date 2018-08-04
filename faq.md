@@ -33,7 +33,7 @@ The reason why some functions are not included in Android, is because we have co
 Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please consider supporting us through these accounts. More information is provided when you click on one of our support avenues.
 
 |  | Patreon | Terl Supporters |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 |  | [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/patron_button.png)](https://www.patreon.com/terlacious) | [![](https://filedn.com/lssh2fV92SE8dRT5CWJvvSy/terl_slant_square_tiny.png)](https://terl.co/support-us) |
 | One-time | ✗ | ✓ |
 | Weekly | ✗ | ✓ |

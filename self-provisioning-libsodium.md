@@ -72,7 +72,17 @@ After [compiling](self-provisioning-libsodium.md) Libsodium you have to make sur
 **Point 1**. Lazysodium for Java has actually placed the native library files within the `resources` folder and as soon as `SodiumJava()` is created, we load the relevant native library depending on the platform we're on. This process is mentioned in point 1 in the list above.
 
 ```java
-// Loading different native libraries depending on // the platformprivate String getLibSodiumFromResources() {    String path = getPath("windows", "libsodium.dll");    if (Platform.isLinux() || Platform.isAndroid()) {        path = getPath("linux", "libsodium.so");    } else if (Platform.isMac()) {        path = getPath("mac", "libsodium.dylib");    }    return path;}
+// Loading different native libraries depending on 
+// the platform
+private String getLibSodiumFromResources() {    
+    String path = getPath("windows", "libsodium.dll");    
+    if (Platform.isLinux() || Platform.isAndroid()) {        
+        path = getPath("linux", "libsodium.so");    
+    } else if (Platform.isMac()) {        
+        path = getPath("mac", "libsodium.dylib");    
+    }    
+    return path;
+}
 ```
 
 Here's what the resources folder looks like:
@@ -103,7 +113,12 @@ Then, add the following to the `android` block in your app level build.gradle fi
 
 ```groovy
 
-android {    sourceSets.main {        jni.srcDirs = []        jniLibs.srcDirs = ['src/main/jniLibs']    }}
+android {    
+    sourceSets.main {        
+        jni.srcDirs = []        
+        jniLibs.srcDirs = ['src/main/jniLibs']    
+    }
+}
 ```
 
 Then in your `jniLibs` folder make sure you have all the Android ABIs listed as folders in there. Within each ABI folder, you need the `libsodium.so` files that was compiled against that ABIs \(see above\). Once you've done that, rename those `libsodium.so` files to something like `libmysodium.so`
