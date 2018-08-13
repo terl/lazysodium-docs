@@ -8,9 +8,10 @@ The table below shows what the project is titled, a short description of the pro
 
 | **Name** | **Short description** | **Android**  | **Java** |
 | :--- | :--- | :--- | :--- |
-| \*\*\*\*[**Lazysodium: The Android App**](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) | Download our open-source app that showcases some of Lazysodium's features. | ✓ | ✗ |
-| \*\*\*\*[**Paseto**](https://github.com/atholbro/paseto)\*\*\*\* | Java Implementation of Platform-Agnostic Security Tokens.  | ✗ | ✓ |
-| \*\*\*\*[**Recordo**](https://recordo.co)\*\*\*\* | A super secure diary/journal that provides end to end encryption. | ✓ | ✓ |
+| [**Lazysodium: The Android App**](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) | Download our open-source app that showcases some of Lazysodium's features. | ✓ | ✗ |
+| [**Paseto**](https://github.com/atholbro/paseto) | Java Implementation of Platform-Agnostic Security Tokens.  | ✗ | ✓ |
+| [**Recordo**](https://recordo.co) | A super secure diary/journal that provides end to end encryption. | ✓ | ✓ |
+| [**E3DB**](https://tozny.com/e3db/) |An encrypted NoSQL database designed from the ground-up for user privacy and security. | ✓ | ✓ |
 
 
 
