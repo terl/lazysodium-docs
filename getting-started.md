@@ -258,19 +258,16 @@ LazySodiumJava ls = new LazySodiumJava(sodium, charset);
 ls.removeNulls(byte[]);
 
 // Converts a byte array to a string
-// using the charset provided above. Warning
-// this will produce null bytes and unexpected
-// carriage returns. Please use sodiumBin2Hex(byte[])
-// to ensure no nulls or carriage breaks.
+// using the charset provided above.
 ls.str(byte[] bs);
 
 // Convert a String to a byte array
 ls.bytes(String s);
 
-// Properly convert a byte array to a string
-// without null bytes and carriage arrays.
-// Be careful in providing the returned string
-// into functions that expect hexadecimal strings
+// Properly convert a byte array to a hexadecimal
+// string. Hex strings are great because they
+// give us strings like A12D22E1524 instead of
+// 29kjdkadaldkalkl-?ald
 ls.sodiumBin2Hex(byte[] bs);
 ```
 
