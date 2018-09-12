@@ -12,6 +12,7 @@ The table below shows what the project is titled, a short description of the pro
 | [**Paseto**](https://github.com/atholbro/paseto) | Java Implementation of Platform-Agnostic Security Tokens. | ✗ | ✓ |
 | [**Recordo**](https://recordo.co) | A super secure diary/journal that provides end to end encryption. | ✓ | ✓ |
 | [**E3DB**](https://tozny.com/e3db/) | An encrypted NoSQL database designed from the ground-up for user privacy and security. | ✓ | ✓ |
+| \*\*\*\*[**ADAMANT**](https://adamant.im/)\*\*\*\* | The most private messenger possible. Your device does not store any info. It directly interacts with the blockchain, where every byte is fully-encrypted. | ✓ | ✗ |
 | [**Kepler**](https://github.com/Quackster/Kepler)\*\*\*\* | A small TCP server written in Java powered by Netty, an asynchronous networking library. | ✗ | ✓ |
 | \*\*\*\*[**Regen Ledger**](https://www.regen.network/) | A global marketplace & contracting platform for Earth's ecosystem assets, services, and data. | ✗ | ✓ |
 | \*\*\*\*[**Tezos**](https://github.com/LMilfont/TezosJ-plainjava)\*\*\*\* | The TezosJ SDK library enables plain Java developers to create applications that communicates with Tezos blockchain. | ✗ | ✓ |
