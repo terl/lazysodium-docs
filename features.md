@@ -1,9 +1,3 @@
----
-description: >-
-  View Lazysodium's features that will surely enhance your cryptography
-  experience.
----
-
 # Features
 
 ### General

@@ -1,7 +1,5 @@
 ---
-description: >-
-  If you want to provide your own compiled Libsodium library and inject it into
-  Lazysodium, then this is the page for you.
+description: 'In this section, we''ll see how you''d compile the native libsodium libraries.'
 ---
 
 # Self-provisioning Libsodium

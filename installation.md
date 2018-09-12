@@ -1,7 +1,3 @@
----
-description: Learn how to install Lazysodium for Android and Java.
----
-
 # Installation
 
 This page is devoted to showing you how to install Lazysodium into your project.

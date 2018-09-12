@@ -1,9 +1,3 @@
----
-description: >-
-  Learn a little more about the inner workings of Lazysodium to learn how to
-  contribute.
----
-
 # Contributions
 
 ##  Introduction
