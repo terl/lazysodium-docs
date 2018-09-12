@@ -1,13 +1,10 @@
 ---
-description: >-
-  Before we begin, please ensure you have added Lazysodium as a dependency in
-  your project. This is outlined in the
-  [readme](https://github.com/terl/lazysodium-java#get-started).
+description: Let's get started with using Lazysodium for Java and Android.
 ---
 
 # Getting started
 
-Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in [the Installation page](installation.md). 
+Before we begin, please ensure you have added Lazysodium as a dependency in your project. This is outlined in [the Installation page](installation.md). We know it's a pain to read the docs \(and the length of this page may put some of you off\), but once you've read these sections, you'd be able to use super-safe and super-secure crypto easily.
 
 ## Part 1: Getting started
 
@@ -17,7 +14,7 @@ Before we begin, please ensure you have added Lazysodium as a dependency in your
 
 ### How Lazysodium names its functions
 
-To understand how Lazysodium's naming works, here's a piece of code. Don't worry if you don't understand it just yet. In the next section, we will provide more information on what each step does.
+To understand how Lazysodium's naming works, here's a piece of code. Don't worry if you don't understand it just yet, you just need to understand how we're naming our classes and functions. In the next section, we will provide more information on how this code works.
 
 ```java
 // This is the native C function for generating a key.
@@ -27,8 +24,8 @@ crypto_secretbox_keygen(key);
 // Let's initialise LazySodium
 LazySodiumJava lazySodium = new LazySodiumJava(new SodiumJava());
 
-// Now you can cast to an interface so that our
-// IDE picks up and intelligently loads up the correct methods. 
+// Now you can cast to an interface so that your
+// IDE picks up and intelligently loads suggestions. 
 SecretBox.Native secretBoxNative = (SecretBox.Native) lazySodium;
 SecretBox.Lazy secretBoxLazy = (SecretBox.Lazy) lazySodium;
 
@@ -44,13 +41,17 @@ secretBoxNative.cryptoSecretBoxKeygen(key);
 String key = secretBoxLazy.cryptoSecretBoxKeygen();
 ```
 
-As you can see, the C code has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`.
+If you've familiarised yourself with the Libsodium docs, then you will be able to see a pattern appearing in the above code. As you can see, the C code from Libsodium has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`. 
+
+Again, it's **vitally** important that you've read the Libsodium documentation otherwise you will be lost and confused. Lazysodium is not in a position to copy Libsodium's documentation just so that we can identify which C classes and functions map to their relevant Java classes and functions - it would be pointless and as Libsodium's documentation changes from time-to-time it would make our jobs as Lazysodium's maintainers to keep everything up-to-date. That is why we've provided this section, to help you figure out yourself what classes you need. 
+
+By the way [here](https://github.com/terl/lazysodium-java/tree/master/src/main/java/com/goterl/lazycode/lazysodium/interfaces) are all the functions you can use.
 
 ### Usage
 
 #### 1. Initialise Sodium
 
-The first step is to create a `sodium` object. The `sodium` object should be initialised only once as it loads the native Libsodium library.
+The first step to getting started with Lazysodium is to create a `sodium` object. The `sodium` object should be initialised only once as it loads the native C Libsodium library.
 
 ```java
 // Place near the start of the program's execution.
