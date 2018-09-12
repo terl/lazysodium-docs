@@ -18,7 +18,7 @@
 
 ### Operations list
 
-A checkmark in the `Native` column means that the particular operation has C native functions written in the APIs language. A checkmark in the `Lazy` column means that the particular operation has been smartly implemented so that the developer has an effortless experience. A checkmark in the `Tests` column means that testing has been performed on that operation.
+A checkmark in the `Native` column means that the particular operation has C native functions written for Java and Android. A checkmark in the `Lazy` column means that the particular operation has been smartly implemented so that the developer has an effortless experience on Java and Android. A checkmark in the `Tests` column means that testing has been performed on that operation for both Java and Android.
 
 | **Operation** | **Native** | **Lazy** | **Tests** |
 | :--- | :--- | :--- | :--- |
