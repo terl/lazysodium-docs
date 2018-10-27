@@ -19,4 +19,5 @@ The table below shows what the project is titled, a short description of the pro
 | \*\*\*\*[**Exonum**](https://github.com/exonum/exonum-java-binding)\*\*\*\* | Exonum Java Binding is a framework for building blockchain applications in Java, powered by Exonum. | ✗ | ✓ |
 | [**QuantPass**](https://github.com/maxjava44/QuantPass)\*\*\*\* | A password manager protected against quantum computers. | ✗ | ✓ |
 | \*\*\*\*[**NCrypt**](https://github.com/charlesportwoodii/ncryptf-java)\*\*\*\* | A library for facilitating hashed based KDF signature authentication, and end-to-end encrypted communication with compatible API's. | ✗ | ✓ |
+| \*\*\*\*[**Threema \(SaltyRTC\)**](https://github.com/saltyrtc/saltyrtc-client-java)\*\*\*\* | Threema is a global end-to-end encrypted chatting app and _SaltyRTC_ is their protocol for encryption. We're very happy to be used in such a popular ****application ****😄 | ✓ | ✓ |
 
