@@ -22,7 +22,7 @@ A checkmark in the `Native` column means that the particular operation has C nat
 
 | **Operation** | **Native** | **Lazy** | **Tests** |
 | :--- | :--- | :--- | :--- |
-| Auth - `crypto_auth*`  functions | ✔ | ✔ | ✔ |
+| Auth - `crypto_auth*`  functions $$^3$$ | ✔ | ✔ | ✔ |
 | AEAD -`crypto_aead*` functions | ✔ | ✔ | ✔ |
 | Box - `crypto_box*` functions | ✔ | ✔ | ✔ |
 | [Diffie-Hellman](https://download.libsodium.org/doc/advanced/scalar_multiplication.html) - `crypto_scalarmult*` functions | ✔ | ✔ | ✔ |
@@ -45,8 +45,9 @@ A checkmark in the `Native` column means that the particular operation has C nat
 
 ### Footnotes
 
-1:  The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.  
-2: The Android variant does not have functions of the following form: `cryptoPwHashScryptSalsa208*`
+1. The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.  
+2. The Android variant does not have functions of the following form: `cryptoPwHashScryptSalsa208*`  
+3. The Android variant does not have auth functions for `armv7` devices. Looking into a fix currently.
 
-Please see [this question in the FAQ](faq.md#why-are-some-functions-unavailable-on-android) for the reason as to why these functions are not available on Android.
+Please see [this question in the FAQ](faq.md#why-are-some-functions-unavailable-on-android) for the reason as to why certain functions are not available on Android.
 
