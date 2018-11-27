@@ -66,7 +66,7 @@ This error occurs if you don't include JNA as a dependency in your project. Plea
 {% tab title="Android" %}
 ```groovy
 dependencies {
-    implementation 'net.java.dev.jna:jna:4.5.1@aar' // Add this line
+    implementation 'net.java.dev.jna:jna:4.5.2@aar' // Add this line
 }
 ```
 {% endtab %}
