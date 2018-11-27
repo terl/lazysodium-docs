@@ -10,7 +10,7 @@ Before we begin, please ensure you have added Lazysodium as a dependency in your
 
 ### Read the docs
 
-**Remember, read the** [**Libsodium documentation**](https://download.libsodium.org/doc/) **to find out what each function outlined below does!**
+**Remember, read the** [**Libsodium documentation**](https://libsodium.gitbook.io/doc/) **to find out what each function outlined below does!**
 
 ### How Lazysodium names its functions
 
@@ -41,13 +41,19 @@ secretBoxNative.cryptoSecretBoxKeygen(key);
 String key = secretBoxLazy.cryptoSecretBoxKeygen();
 ```
 
-If you've familiarised yourself with the Libsodium docs, then you will be able to see a pattern appearing in the above code. As you can see, the C code from Libsodium has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`. 
+If you've familiarised yourself with the Libsodium docs, then you will be able to see a **pattern** emerging in the above code. As you can see, the C code from Libsodium has been camel-cased and encapsulated in a class that's relevant to the operation. For example `crypto_secretbox*` functions are in a class called `SecretBox` and `crypto_generichash*` functions are in a class called `GenericHash`. 
 
-Again, it's **vitally** important that you've read the Libsodium documentation otherwise you will be lost and confused. Lazysodium is not in a position to copy Libsodium's documentation just so that we can identify which C classes and functions map to their relevant Java classes and functions - it would be pointless and as Libsodium's documentation changes from time-to-time it would make our jobs as Lazysodium's maintainers to keep everything up-to-date. That is why we've provided this section, to help you figure out yourself what classes you need. 
+### Seriously, read the official docs
 
-By the way [here](https://github.com/terl/lazysodium-java/tree/master/src/main/java/com/goterl/lazycode/lazysodium/interfaces) are all the functions you can use.
+Again, it's **vitally** important that you've read the [`Libsodium documentation`](https://libsodium.gitbook.io/doc/) otherwise you will be lost and confused. We want you to read Libsodium's documentation because practically everything is already written there. Lazysodium does not want to rewrite all that documentation - all Lazysodium does is provide a nice Java interface to those official functions.
 
-### Usage
+Moreover, Libsodium's documentation changes from time-to-time so it would make maintaining Lazysodium's documentation an impossible task. That is the reason why we have provided you this section to read... To help you figure out what classes you need yourself based on the Libsodium docs. 
+
+### Function list
+
+[Here](https://github.com/terl/lazysodium-java/tree/master/src/main/java/com/goterl/lazycode/lazysodium/interfaces) are all the functions you can use.
+
+## Part 2: Usage
 
 #### 1. Initialise Sodium
 
@@ -165,9 +171,9 @@ public interface KeyExchange {
 
 There is an obvious naming strategy to our constants. For example, `crypto_kx_PUBLICKEYBYTES` is available in Lazysodium as `KeyExchange.PUBLICKEYBYTES`. Similarly, `crypto_shorthash_KEYBYTES` is available as `ShortHash.KEYBYTES`.
 
-## Part 2: Helpful hints
+## Part 3: Helpful hints
 
-### The Native and Lazy split
+### The Native and Lazy divide
 
 We'd like to take an opportunity to show you the difference between using the Native interface and using the Lazy interface.
 
@@ -211,7 +217,7 @@ System.out.println(key.getAsHexString());
 
 ```
 
-The `Native` and `Lazy`  functions are practically the same BUT the Lazy functions almost always return `String`s in hexadecimal format.
+The `Native` and `Lazy`  functions are practically the same BUT the Lazy functions almost always return a `String` in **hexadecimal** format.
 
 1. **Never** mix Native and Lazy functions, unless you know what you're doing.
 2. Lazy functions, **in most cases**, take and return hexadecimal strings - be careful and read the code's documentation to be sure.
@@ -247,7 +253,7 @@ boolean correctLength = SecretBox.Checker.checkKeyLen(key.length);
 
 ### Convenience methods
 
-There are some convenience methods located in the `LazySodium` class that can aid you on your way. Here's a few:
+There are some convenience methods located in the `LazySodium` class that can help you even further. Here's a few:
 
 ```java
 // Set a default charset

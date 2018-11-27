@@ -75,7 +75,7 @@ Lazysodium for Android requires:
 
 ### Add the library
 
-Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version.
+Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for version `4.5.2`. Versions `5.0.0` and above of the JNA library come up with an error that it cannot find the `libjnidispatch.so` file.
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -87,7 +87,7 @@ repositories {
     }
 }
 
-// Add to dependencies section
+// Add to dependencies section.
 dependencies {
     implementation "com.goterl.lazycode:lazysodium-android:VERSION_NUMBER@aar"
     implementation "net.java.dev.jna:jna:LATEST_JNA_VERSION@aar"
