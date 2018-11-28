@@ -46,6 +46,18 @@ Lazysodium needs money to survive. We've setup the following accounts for you to
 
 Yes we do! View our Sponsor page to find out more.
 
+## What platforms does Lazysodium support?
+
+Lazysodium can support any reasonably modern machine with a reasonably modern architecture. As Lazysodium is binding on Libsodium, Lazysodium is constrained by Libsodium's supported CPU architectures which can be found [here](https://github.com/jedisct1/libsodium/tree/master/dist-build). Therefore Lazysodium currently supports:
+
+* Windows 7 and above.
+* Ubuntu 14.04 and above\*.
+* Android 16 and above.
+* iOS 10.2 and above.
+* MacOS 10.11 and above.
+
+\*Support for other linux distros can _theoretically_ be added by cross-compilation, just [create](https://github.com/terl/lazysodium-java/issues) a GitHub issue and we'll see what we can do.
+
 ## Does Lazysodium have example apps?
 
 Yes! Please download it from the [Google Play Store](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example).
