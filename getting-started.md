@@ -102,7 +102,7 @@ LazySodiumJava lazySodium = new LazySodiumJava(sodium);
 
 // Now you can cast and use the enhanced native 
 // Libsodium functions
-byte[] pw = "A cool password".getBytes(StandardCharsets.UTF_8);
+byte[] pw = lazySodium.bytes("A cool password");
 byte[] outputHash = new byte[PwHash.STR_BYTES];
 PwHash.Native pwHash = (PwHash.Native) lazySodium;
 boolean success = pwHash.cryptoPwHashStr(
