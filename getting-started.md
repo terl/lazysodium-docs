@@ -109,18 +109,14 @@ boolean success = pwHash.cryptoPwHashStr(
     outputHash,
     pw,
     pw.length,
-    PwHash.PWHASH_ARGON2ID_OPSLIMIT_MIN,
-    PwHash.PWHASH_ARGON2ID_MEMLIMIT_MIN
+    PwHash.OPSLIMIT_MIN,
+    PwHash.MEMLIMIT_MIN
 );
 
 // ... or you can use the super-powered lazy functions.
 // For example, this is equivalent to the above.
 PwHash.Lazy pwHashLazy = (PwHash.Lazy) lazySodium;
-String hash = pwHashLazy.cryptoPwHashStr(
-    "A cool password", 
-    PwHash.PWHASH_ARGON2ID_OPSLIMIT_MIN,
-    PwHash.PWHASH_ARGON2ID_MEMLIMIT_MIN
-);
+String hash = lazySodium.cryptoPwHashStr("a cool password", PwHash.OPSLIMIT_MIN, PwHash.MEMLIMIT_MIN);
 ```
 
 #### Step 4: Raw functions \(Optional\)
