@@ -75,7 +75,7 @@ Lazysodium for Android requires:
 
 ### Add the library
 
-Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for version `4.5.2`. Versions `5.0.0` and above of the JNA library come up with an error that it cannot find the `libjnidispatch.so` file.
+Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version, keep the `@aar` ending.
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -102,5 +102,5 @@ If you're wanting to just add the AAR then grab it from the files section on the
 
 ## Verification using GPG
 
-If you want to verify an AAR or a JAR or any file, then [this question in the FAQ](faq.md#how-do-i-verify-a-file-through-gpg) on GPG usage will help you out.
+If you want to verify an AAR or a JAR or any file, then [this question in the FAQ](faq.md#how-do-i-verify-a-file-through-gpg) on GPG usage will help.
 
