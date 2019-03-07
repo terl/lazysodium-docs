@@ -19,14 +19,19 @@ Substitute `VERSION_NUMBER` with the latest version available on [this page](htt
 {% tabs %}
 {% tab title="Gradle" %}
 ```groovy
-// Top level build file
+// Top level build file 
 repositories {
+    // You can either sync with our bintray repo
+    // for faster updates
     maven {
         url  "https://dl.bintray.com/terl/lazysodium-maven"
     }
+    
+    // ... Or use jcenter (many people already have jcenter synced)
+    jcenter()
 }
 
-// Add to dependencies section
+// Add to dependencies section in app level build file
 dependencies {
     implementation "com.goterl.lazycode:lazysodium-java:VERSION_NUMBER"
     implementation "net.java.dev.jna:jna:LATEST_JNA_VERSION"
@@ -36,7 +41,7 @@ dependencies {
 
 {% tab title="Maven" %}
 ```markup
-// Add the repo first
+<--! Add the repo first. Can also use jcenter but updates are slower !-->
 <repositories>
     <repository>
       <id>lazysodium-java</id>
@@ -44,6 +49,7 @@ dependencies {
     </repository>
  </repositories>
 
+<--! Now add the dependencies !-->
 <dependency>
   <groupId>com.goterl.lazycode</groupId>
   <artifactId>lazysodium-java</artifactId>
@@ -87,7 +93,7 @@ repositories {
     }
 }
 
-// Add to dependencies section.
+// Add to dependencies section in app level build file
 dependencies {
     implementation "com.goterl.lazycode:lazysodium-android:VERSION_NUMBER@aar"
     implementation "net.java.dev.jna:jna:LATEST_JNA_VERSION@aar"
