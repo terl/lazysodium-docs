@@ -8,7 +8,7 @@
 * [Self-provisioning Libsodium](self-provisioning-libsodium.md)
 * [Contributions](contributions.md)
 * [Migrations](migrations.md)
-* [Projects](projects.md)
+* [Lazysodium powered projects](projects.md)
 * [Sponsors](sponsors.md)
 * [FAQ](faq.md)
 

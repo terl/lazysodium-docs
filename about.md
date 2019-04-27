@@ -1,5 +1,5 @@
 ---
-description: Lazysodium is a cryptographic library. Find out how to use it on this page.
+description: About Lazysodium and its uses across Java and Android.
 ---
 
 # About
@@ -68,7 +68,5 @@ Please view the [FAQ](faq.md) page for more info.
 
 See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
-## Become a supporter
 
-Lazysodium needs money to survive. We've setup the following accounts for you to easily keep Lazysodium and all our other projects going. Your money would primarily be used to fund our open-source ventures. Please [visit the FAQ to find out more](faq.md#who-funds-lazysodium).
 
