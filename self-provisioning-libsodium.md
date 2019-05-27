@@ -88,11 +88,11 @@ Here's what the resources folder looks like:
 ```text
 src/main/resources
 ├── mac/
-│   └── libmysodium.so
-├── armeabi/
-│   └── libmysodium.so
-└── armeabi-v7a/
-│   └── libmysodium.so
+│   └── libsodium.dylib
+├── linux/
+│   └── libsodium.so
+└── windows/
+│   └── libsodium.dll
 ```
 
 **Point 2** is quite simple but there are many ways of doing it such as setting environment variables in your `.bashrc` or `export`ing them. Seek and you shall find.
