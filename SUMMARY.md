@@ -2,16 +2,17 @@
 
 * [Lazysodium: making cryptography effortless](README.md)
 
+## about
+
+* [About](about-1/about.md)
+* [Features](about-1/features.md)
+* [Supported platforms](about-1/supported-platforms.md)
+
 ## Usage
 
 * [Getting started](usage/getting-started.md)
 * [Installation](usage/installation.md)
 * [Upgrading](usage/migrations.md)
-
-## about
-
-* [About](about-1/about.md)
-* [Features](about-1/features.md)
 
 ## Extras
 

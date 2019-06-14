@@ -30,18 +30,7 @@ The reason why some functions are not included in Android, is because we have co
 
 ## What platforms does Lazysodium support?
 
-Lazysodium can support any reasonably modern machine with a reasonably modern architecture. As Lazysodium is binding on Libsodium, Lazysodium is constrained by Libsodium's supported CPU architectures which can be found [here](https://github.com/jedisct1/libsodium/tree/master/dist-build). Therefore Lazysodium currently supports:
-
-* Windows 7 and above.
-* Ubuntu 14.04 and above\*.
-* Android 16 and above.
-* iOS 10.2 and above.
-* MacOS 10.11 and above.
-* Arm 7 and above \(e.g. Raspberry Pi 2+\)\*\*.
-
-\*Support for other linux distros can _theoretically_ be added by cross-compilation, just [create](https://github.com/terl/lazysodium-java/issues) a GitHub issue and we'll see what we can do.
-
-\*\* You need to switch to the `raspberry-pi` branch for now as there are still a few functions not working. See [this](https://github.com/terl/lazysodium-java/issues/45) issue.
+Please see [this page](../about-1/supported-platforms.md) for more information.
 
 ## Does Lazysodium have example apps?
 
