@@ -1,14 +1,22 @@
 # Table of contents
 
 * [Lazysodium: making cryptography effortless](README.md)
-* [About](about.md)
-* [Features](features.md)
-* [Installation](installation.md)
-* [Getting started](getting-started.md)
-* [Self-provisioning Libsodium](self-provisioning-libsodium.md)
-* [Contributions](contributions.md)
-* [Migrations](migrations.md)
-* [Lazysodium powered projects](projects.md)
-* [Sponsors](sponsors.md)
-* [FAQ](faq.md)
+
+## Usage
+
+* [Getting started](usage/getting-started.md)
+* [Installation](usage/installation.md)
+* [Upgrading](usage/migrations.md)
+
+## about
+
+* [About](about-1/about.md)
+* [Features](about-1/features.md)
+
+## Extras
+
+* [Contributions](extras/contributions.md)
+* [Self-provisioning Libsodium](extras/self-provisioning-libsodium.md)
+* [Lazysodium powered projects](extras/projects.md)
+* [FAQ](extras/faq.md)
 

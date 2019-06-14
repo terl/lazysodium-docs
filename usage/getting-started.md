@@ -75,7 +75,7 @@ SodiumAndroid sodium = new SodiumAndroid("/absolute/path/to/directory/of/android
 
 The first 1 to 6 lines demonstrates auto-loading of the prepackaged _native_ C Libsodium library from Lazysodium's `resources` folder \(if you're on Java, that is\). In lines 7 to 11 the code demonstrates that you can provide a path to your own Libsodium file. This is the preferred choice if you are running on a operating system or platform which may not be mainstream and so have compiled Libsodium yourself. Or if you simply don't trust us.
 
-**Note:** If you need some hints on how to self-provide your own Libsodium native library please see the [self-provisioning page](self-provisioning-libsodium.md).
+**Note:** If you need some hints on how to self-provide your own Libsodium native library please see the [self-provisioning page](../extras/self-provisioning-libsodium.md).
 
 For Linux, the native Libsodium library will be contained in a `libsodium.so` file. For Mac, it's called `libsodium.dylib`. For Windows, it's called `libsodium.dll`. For Android, it's `libsodium.so`, but it's **NOT** the same as the Linux `libsodium.so`, it's compiled differently.
 
@@ -287,5 +287,5 @@ You can also review our [test classes](https://github.com/terl/lazysodium-java/t
 
 There is also a Lazysodium [open-source app](https://github.com/terl/lazysodium-examples/tree/master/android) available on [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) that allows you to see some operations:
 
-[![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
+[![Download Lazysodium](../.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 

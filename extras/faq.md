@@ -8,7 +8,7 @@ description: Any questions go here.
 
 We get it. You've tried a million other cryptography libraries and you're tired of performing mental gymnastics just to get something, anything working. We've done the work for you. We've compiled and wrapped the native libraries inside this project so you don't have to. We've designed our library in such a way that just makes cryptography infinitely easier to work with and deploy in a matter of minutes.
 
-Under the hood, we're using Libsodium, an excellent audited cryptography library that just works. We've implemented all the [features](features.md) of Libsodium in Lazysodium. To find out more about why we created Lazysodium visit the [about](about.md) page.
+Under the hood, we're using Libsodium, an excellent audited cryptography library that just works. We've implemented all the [features](../about-1/features.md) of Libsodium in Lazysodium. To find out more about why we created Lazysodium visit the [about](../about-1/about.md) page.
 
 ## Why is this project called Lazysodium?
 
@@ -22,15 +22,11 @@ Even though you can code in Java on Android, it does not mean that Android confo
 
 As a matter of fact, we do! Visit [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) to see some of what Lazysodium can do.
 
-[![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
+[![Download Lazysodium](../.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
 ## Why are some functions unavailable on Android?
 
 The reason why some functions are not included in Android, is because we have compiled Libsodium against "minimal mode" which means that more demanding functions won't run on low powered hardware. If you really want to use those functions recompile Libsodium in "full mode" and then [self provision it](self-provisioning-libsodium.md).
-
-## Does Lazysodium take sponsors?
-
-Yes we do! View our Sponsor page to find out more.
 
 ## What platforms does Lazysodium support?
 
@@ -51,7 +47,7 @@ Lazysodium can support any reasonably modern machine with a reasonably modern ar
 
 Yes! Please download it from the [Google Play Store](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example).
 
-## Lazysodium contains a bug.
+## Lazysodium contains a bug
 
 We're sorry to hear this. It goes against our ethos to make you do some work, but if you could create an issue on the issue tracker [https://github.com/terl/lazysodium-java/issues](https://github.com/terl/lazysodium-java/issues%29\), that'd be perfect.
 

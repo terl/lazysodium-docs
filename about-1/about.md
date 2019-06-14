@@ -50,7 +50,7 @@ As you can see Lazysodium makes cryptography effortless!
 
 There is a Lazysodium app available on [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) that shows you some encryption and hashing operations:
 
-[![Download Lazysodium](.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
+[![Download Lazysodium](../.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
 ## Supported languages
 
@@ -62,11 +62,11 @@ Please view the [Features](features.md) page for more details.
 
 ## Questions
 
-Please view the [FAQ](faq.md) page for more info.
+Please view the [FAQ](../extras/faq.md) page for more info.
 
 ## Our GPG Key
 
-See [this](faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
+See [this](../extras/faq.md#how-do-i-verify-a-file-through-gpg) question in the FAQ.
 
 
 

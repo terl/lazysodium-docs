@@ -65,7 +65,7 @@ dependencies {
 {% endtab %}
 
 {% tab title="JARs" %}
-If you're wanting to just add the JAR then grab it from the files section on the [Bintray page](https://bintray.com/terl/lazysodium-maven/lazysodium-java/_latestVersion). Then verify it using our GPG key which can be found on our [FAQ](faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need the Java JNA jar file \(link above\).
+If you're wanting to just add the JAR then grab it from the files section on the [Bintray page](https://bintray.com/terl/lazysodium-maven/lazysodium-java/_latestVersion). Then verify it using our GPG key which can be found on our [FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need the Java JNA jar file \(link above\).
 {% endtab %}
 {% endtabs %}
 
@@ -102,11 +102,11 @@ dependencies {
 {% endtab %}
 
 {% tab title="AARs" %}
-If you're wanting to just add the AAR then grab it from the files section on the [Bintray page](https://bintray.com/terl/lazysodium-maven/lazysodium-android/_latestVersion). Then optionally verify it using our GPG key which can be found on our [FAQ](faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need to grab the AAR JNA file \(link above\).
+If you're wanting to just add the AAR then grab it from the files section on the [Bintray page](https://bintray.com/terl/lazysodium-maven/lazysodium-android/_latestVersion). Then optionally verify it using our GPG key which can be found on our [FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need to grab the AAR JNA file \(link above\).
 {% endtab %}
 {% endtabs %}
 
 ## Verification using GPG
 
-If you want to verify an AAR or a JAR or any file, then [this question in the FAQ](faq.md#how-do-i-verify-a-file-through-gpg) on GPG usage will help.
+If you want to verify an AAR or a JAR or any file, then [this question in the FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) on GPG usage will help.
 

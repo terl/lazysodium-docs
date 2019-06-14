@@ -9,7 +9,7 @@
 * [x] Up-to-date with the awesome [Libsodium](https://github.com/jedisct1/libsodium) library \(version 1.0.16, 31st Oct 2018\).
 * [x] Bundled and compiled native libraries so you don't have to.
 * [x] Reactive and fast release cadence.
-* [x] [Bring your own Libsodium](self-provisioning-libsodium.md) native libraries.
+* [x] [Bring your own Libsodium](../extras/self-provisioning-libsodium.md) native libraries.
 * [x] [Lazysodium for Android](https://github.com/terl/lazysodium-android) and [Lazysodium for Java](https://github.com/terl/lazysodium-java) both benefit from the same codebase.
 * [x] They both have been designed with JNA [Direct Mapping](https://github.com/java-native-access/jna/blob/master/www/DirectMapping.md) for extra speed.
 * [x] Architected in a composite oriented fashion to allow developers to narrow what operation they want to use at any time - less opportunity for bugs.
@@ -47,5 +47,5 @@ A checkmark in the `Native` column means that the particular operation has C nat
 1. The Android variant does not have Salsa20 8 and 12 rounds and no XChaCha20.  
 2. The Android variant does not have functions of the following form: `cryptoPwHashScryptSalsa208*`
 
-Please see [this question in the FAQ](faq.md#why-are-some-functions-unavailable-on-android) for the reason as to why certain functions are not available on Android.
+Please see [this question in the FAQ](../extras/faq.md#why-are-some-functions-unavailable-on-android) for the reason as to why certain functions are not available on Android.
 
