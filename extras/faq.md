@@ -18,12 +18,6 @@ We wanted developers to have an effortless experience using cryptography. Every 
 
 Even though you can code in Java on Android, it does not mean that Android conforms to Java's semantics surrounding the build and packaging phases. For example, Java packages files as a `jar` and Android packages files as an `aar`. This is so that you can include `res` files in your Android projects. This is why we have both Lazysodium for Android and Lazysodium for Java even if the former is just a wrapper around the latter.
 
-## Do you have any apps to showcase Lazysodium?
-
-As a matter of fact, we do! Visit [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) to see some of what Lazysodium can do.
-
-[![Download Lazysodium](../.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
-
 ## Why are some functions unavailable on Android?
 
 The reason why some functions are not included in Android, is because we have compiled Libsodium against "minimal mode" which means that more demanding functions won't run on low powered hardware. If you really want to use those functions recompile Libsodium in "full mode" and then [self provision it](self-provisioning-libsodium.md).
@@ -52,7 +46,7 @@ This error occurs if you don't include JNA as a dependency in your project. Plea
 {% tab title="Android" %}
 ```groovy
 dependencies {
-    implementation 'net.java.dev.jna:jna:4.5.2@aar' // Add this line
+    implementation 'net.java.dev.jna:jna:LATEST_VERSION@aar' // Add this line
 }
 ```
 {% endtab %}
@@ -60,11 +54,13 @@ dependencies {
 {% tab title="Java" %}
 ```groovy
 dependencies {
-    implementation 'net.java.dev.jna:jna:4.5.1' // Add this line
+    implementation 'net.java.dev.jna:jna:LATEST_VERSION' // Add this line
 }
 ```
 {% endtab %}
 {% endtabs %}
+
+Where `LATEST_VERSION` is the latest version of [JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna).
 
 ## How do I verify a file through GPG?
 
@@ -107,4 +103,10 @@ gpg: Signature made Tue  5 Jun 01:33:36 2018 BST
 gpg:                using EDDSA key D1A9234F12141C2808B3E6015FCBE4222D2C66D7
 gpg: Good signature from "Terl Tech Ltd <hello@terl.co>" [ultimate]
 ```
+
+## Do you have any apps to showcase Lazysodium?
+
+As a matter of fact, we do! Visit [Google Play](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example) to see some of what Lazysodium can do.
+
+[![Download Lazysodium](../.gitbook/assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.goterl.lazycode.lazysodium.example)
 
