@@ -11,9 +11,7 @@ Lazysodium can support any reasonably modern machine with a reasonably modern ar
 * Android 16 and above.
 * iOS 10.2 and above.
 * MacOS 10.11 and above.
-* Arm 7 and above \(e.g. Raspberry Pi 2+\)\*\*.
+* Arm6 and above \(e.g. Raspberry Pi 1 and above\).
 
 \*Support for other linux distros can _theoretically_ be added by cross-compilation, just [create](https://github.com/terl/lazysodium-java/issues) a GitHub issue and we'll see what we can do.
-
-\*\* You need to switch to the `raspberry-pi` branch for now as there are still a few functions not working. See [this](https://github.com/terl/lazysodium-java/issues/45) issue.
 

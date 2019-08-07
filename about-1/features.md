@@ -6,7 +6,7 @@
 * [x] Completely open source.
 * [x] Ability to use commercially under the terms of the [MPLv2](https://www.mozilla.org/en-US/MPL/2.0/FAQ/).
 * [x] Great [collaborative](https://github.com/terl/lazysodium-docs) documentation.
-* [x] Up-to-date with the awesome [Libsodium](https://github.com/jedisct1/libsodium) library \(version 1.0.16, 31st Oct 2018\).
+* [x] Up-to-date with the awesome [Libsodium](https://github.com/jedisct1/libsodium) library \(version 1.0.18, 31st June 2019\).
 * [x] Bundled and compiled native libraries so you don't have to.
 * [x] Reactive and fast release cadence.
 * [x] [Bring your own Libsodium](../extras/self-provisioning-libsodium.md) native libraries.
