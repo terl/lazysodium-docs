@@ -21,13 +21,6 @@ Substitute `VERSION_NUMBER` with the latest version available on [this page](htt
 ```groovy
 // Top level build file 
 repositories {
-    // You can either sync with our bintray repo
-    // for faster updates
-    maven {
-        url  "https://dl.bintray.com/terl/lazysodium-maven"
-    }
-    
-    // ... Or use jcenter (many people already have jcenter synced)
     jcenter()
 }
 
@@ -41,14 +34,6 @@ dependencies {
 
 {% tab title="Maven" %}
 ```markup
-<--! Add the repo first. Can also use jcenter but updates are slower !-->
-<repositories>
-    <repository>
-      <id>lazysodium-java</id>
-      <url>https://dl.bintray.com/terl/lazysodium-maven</url>
-    </repository>
- </repositories>
-
 <--! Now add the dependencies !-->
 <dependency>
   <groupId>com.goterl.lazycode</groupId>
