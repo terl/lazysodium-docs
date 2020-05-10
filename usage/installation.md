@@ -91,6 +91,16 @@ If you're wanting to just add the AAR then grab it from the files section on the
 {% endtab %}
 {% endtabs %}
 
+### Proguard
+
+If you are using Proguard then it is advisable to use the following rules for JNA. This is taken from the [JNA's wiki page](https://github.com/java-native-access/jna/blob/master/www/FrequentlyAskedQuestions.md#jna-on-android).
+
+```text
+-dontwarn java.awt.*
+-keep class com.sun.jna.* { *; }
+-keepclassmembers class * extends com.sun.jna.* { public *; }
+```
+
 ## Verification using GPG
 
 If you want to verify an AAR or a JAR or any file, then [this question in the FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) on GPG usage will help.
