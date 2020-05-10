@@ -1,6 +1,10 @@
-# Installation
+---
+description: >-
+  This page is devoted to showing you how to install Lazysodium into your
+  project.
+---
 
-This page is devoted to showing you how to install Lazysodium into your project.
+# Installation
 
 ## Java
 
