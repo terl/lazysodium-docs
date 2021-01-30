@@ -3,7 +3,7 @@
 ### General
 
 * [x] **Kotlin** compatible.
-* [x] **Fat-jar** compatible; can be used in applications that are like SpringBoot.
+* [x] **Fat-jar** compatible; can be used in applications such as SpringBoot.
 * [x] Up-to-date with the awesome Libsodium library \(version 1.0.18, 31st June 2019\).
 * [x] **Bundled and compiled** native libraries so you don't have to.
 * [x] Ability to **use commercially** under the terms of the [MPLv2](https://www.mozilla.org/en-US/MPL/2.0/FAQ/).
@@ -12,7 +12,7 @@
 * [x] [Bring your own Libsodium](../extras/self-provisioning-libsodium.md) native libraries.
 * [x] [Lazysodium for Android](https://github.com/terl/lazysodium-android) and [Lazysodium for Java](https://github.com/terl/lazysodium-java) both benefit from the same codebase.
 * [x] They both have been designed with JNA [Direct Mapping](https://github.com/java-native-access/jna/blob/master/www/DirectMapping.md) for extra speed.
-* [x] Architected in a composite oriented fashion to allow developers to narrow what operation they want to use at any time - less opportunity for bugs.
+* [x] Architected in a **composite oriented** fashion to allow developers to narrow what operation they want to use at any time - less opportunity for bugs.
 * [x] Architected in such a way that you can use raw JNA wrapped native C functions whenever you want.
 * [x] Super easy install.
 * [x] **Completely open source**.
