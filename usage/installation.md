@@ -70,21 +70,20 @@ Substitute `VERSION_NUMBER` with the latest version available on [this page](htt
 ```groovy
 // Top level build file
 repositories {
-    maven {
-        url  "https://dl.bintray.com/terl/lazysodium-maven"
-    }
+    // Add this to the end of any existing repositories
+    mavenCentral() 
 }
 
-// Add to dependencies section in app level build file
+// Project level dependencies section
 dependencies {
-    implementation "com.goterl.lazycode:lazysodium-android:VERSION_NUMBER@aar"
-    implementation "net.java.dev.jna:jna:LATEST_JNA_VERSION@aar"
+    implementation "com.goterl:lazysodium-android:VERSION_NUMBER@aar"
+    implementation "net.java.dev.jna:jna:JNA_NUMBER@aar"
 }
 ```
 {% endtab %}
 
 {% tab title="AARs" %}
-If you're wanting to just add the AAR then grab it from the files section on the [Bintray page](https://bintray.com/terl/lazysodium-maven/lazysodium-android/_latestVersion). Then optionally verify it using our GPG key which can be found on our [FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need to grab the AAR JNA file \(link above\).
+If you're wanting to just add the AAR then grab it from the Download button on the right hand side of the [Maven Sonatype search page](https://search.maven.org/search?q=a:lazysodium-android). Then optionally verify it using our GPG key which can be found on our [FAQ](../extras/faq.md#how-do-i-verify-a-file-through-gpg) page. You will also need to grab the AAR JNA file \(link above\).
 {% endtab %}
 {% endtabs %}
 
