@@ -14,7 +14,7 @@ Lazysodium for Java requires:
 * Gradle 4.7 or higher \(if compiling and building\).
 * No effort whatsoever.
 
-Substitute `VERSION_NUMBER` with the latest version available on [this page](https://search.maven.org/search?q=a:lazysodium-java) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version.
+Substitute `VERSION_NUMBER` with the latest version available on [this page](https://search.maven.org/search?q=a:lazysodium-java). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version.
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -63,7 +63,7 @@ Lazysodium for Android requires:
 * Gradle \(if compiling and building\).
 * No effort whatsoever.
 
-Substitute `VERSION_NUMBER` with the latest version available on [this page](https://bintray.com/terl/lazysodium-maven/lazysodium-android) \(located in the bottom right\). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version, keep the `@aar` ending.
+Substitute `VERSION_NUMBER` with the latest version available on [this page](https://search.maven.org/search?q=a:lazysodium-android). Substitute `LATEST_JNA_VERSION` for the [latest JNA](https://mvnrepository.com/artifact/net.java.dev.jna/jna) version, keep the `@aar` ending.
 
 {% tabs %}
 {% tab title="Gradle" %}
